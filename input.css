@@ -28,14 +28,14 @@
     @apply -right-4 md:right-1 2xl:right-[-100px];
   }
   .arrow-Style .slick-next:before {
-    @apply bg-[url('/src/assets/images/arrow-right.webp')] bg-no-repeat bg-center content-[''] absolute z-10 w-3 h-5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    @apply bg-[url('/assets/images/arrow-right.webp')] bg-no-repeat bg-center content-[''] absolute z-10 w-3 h-5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
     background-size: 12px;
   }
   .arrow-Style .slick-prev {
     @apply -left-4 md:left-1 2xl:left-[-100px];
   }
   .arrow-Style .slick-prev:before {
-    @apply bg-[url('/src/assets/images/arrow-left.webp')] bg-no-repeat bg-center content-[''] absolute z-10 w-3 h-5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    @apply bg-[url('/assets/images/arrow-left.webp')] bg-no-repeat bg-center content-[''] absolute z-10 w-3 h-5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
     background-size: 12px;
   }
   .slider-item {
