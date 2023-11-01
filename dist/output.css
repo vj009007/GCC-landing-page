@@ -1165,6 +1165,12 @@ body.cart-active .shopping-cart {
   margin-left: 0 !important;
 }
 
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 /******** New Menu Css *********/
 
 .sr-only {
