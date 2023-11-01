@@ -5,11 +5,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>GCC</title>
       <meta name="description" content="GCC meta description goes here / for SEO purpose">
-      <link href="/assets/font-awesome/css/fontawesome.css" rel="stylesheet">
-      <link href="/assets/font-awesome/css/light.css" rel="stylesheet">
-      <link href="/assets/font-awesome/css/sharp-light.css" rel="stylesheet">
-      <link href="/assets/font-awesome/css/sharp-solid.css" rel="stylesheet">
-      <link href="/assets/font-awesome/css/regular.css" rel="stylesheet">
+      <link href="/assets/font-awesome/css/fontawesome.min.css" rel="stylesheet">
+      <link href="/assets/font-awesome/css/light.min.css" rel="stylesheet">
+      <link href="/assets/font-awesome/css/sharp-light.min.css" rel="stylesheet">
+      <link href="/assets/font-awesome/css/sharp-solid.min.css" rel="stylesheet">
+      <link href="/assets/font-awesome/css/regular.min.css" rel="stylesheet">
       <link href="/assets/font-awesome/css/brands.css" rel="stylesheet">
 
       <link href="/assets/css/slick.min.css" rel="stylesheet">
@@ -102,7 +102,7 @@
 
             <!-- Navigation -->
             <nav class="mt-7 border-y-2 border-[#414141] hidden relative z-20 md:block">
-                <div class="container  pl-0 flex gap-5 lg:gap-10">
+                <div class="container pl-0 flex gap-5 lg:gap-10">
                     <div class="categories-nav">
                         <ul class="menu flex">
                             <li class="have-sub-menu categories active">
@@ -195,7 +195,7 @@
       <!-- End Header -->
 
       <!-- Slider -->
-      <section class="relative bg-no-repeat bg-cover pt-10 md:pt-20 pb-10" style="background-image:url('/assets/images/black-wood.webp');">
+      <section class="relative bg-no-repeat bg-cover pt-10 md:pt-20 pb-10" style="background-image:url('../src/assets/images/black-wood.webp');">
         <div class="container">
             <div class="banner-slider arrow-Style">
                 <div class="slider-item">
@@ -210,7 +210,13 @@
                         <a href="#" class="btn hidden sm:block">Jetzt Bestellen</a>
                     </div>
                     <div class="md:w-5/12 px-8 md:px-0">
-                        <img width="555" height="310" src="/assets/images/headline-meat.webp" alt="featured">
+                        <picture>
+                            <source 
+                               media="(max-width: 465px)"
+                               srcset="/assets/images/headline-meat-mobile.webp">
+                               <img width="555" height="310" src="/assets/images/headline-meat.webp" alt="featured">
+                         </picture>
+                        
                     </div>
                 </div>
 
@@ -226,7 +232,12 @@
                         <a href="#" class="btn hidden sm:block">Jetzt Bestellen</a>
                     </div>
                     <div class="md:w-5/12 px-8 md:px-0">
-                        <img width="555" height="310" src="/assets/images/headline-meat.webp" alt="featured">
+                        <picture>
+                            <source 
+                               media="(max-width: 465px)"
+                               srcset="/assets/images/headline-meat-mobile.webp">
+                               <img width="555" height="310" src="/assets/images/headline-meat.webp" alt="featured">
+                         </picture>
                     </div>
                 </div>
 
@@ -242,7 +253,12 @@
                         <a href="#" class="btn hidden sm:block">Jetzt Bestellen</a>
                     </div>
                     <div class="md:w-5/12 px-8 md:px-0">
-                        <img width="555" height="310" src="/assets/images/headline-meat.webp" alt="featured">
+                        <picture>
+                            <source 
+                               media="(max-width: 465px)"
+                               srcset="/assets/images/headline-meat-mobile.webp">
+                               <img width="555" height="310" src="/assets/images/headline-meat.webp" alt="featured">
+                         </picture>
                     </div>
                 </div>
              </div>
@@ -313,7 +329,12 @@
             <div class="grid lg:grid-cols-7 grid-cols-1 gap-11 mt-10 arrivalsWrapper">
                 <div class="lg:col-span-4">
                     <a href="#" class="block h-full">
-                        <img width="752" height="772" src="/assets/images/new-arrivals1.webp" srcset="/assets/images/new-arrivals1@2x.webp 2x" alt="arrivals1" class="h-full w-full object-cover">
+                        <picture>
+                            <source 
+                               media="(max-width: 465px)"
+                               srcset="/assets/images/new-arrivals1_400x266.webp">
+                               <img width="752" height="772" src="/assets/images/new-arrivals1.webp" srcset="/assets/images/new-arrivals1@2x.webp 2x" alt="arrivals1" class="h-full w-full object-cover">
+                         </picture>
                         <div class="text-wrapper">
                             <h3 class="text-white md:text-[40px] text-[28px] leading-none font-semibold">PLATEA PARTURIENT</h3>
                             <p class="lg:text-[50px] text-3xl text-primary font-medium leading-none mt-3">99.00 €</p>
@@ -323,14 +344,24 @@
                 <div class="lg:col-span-3">
                     <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-9">
                         <a href="#">
-                            <img width="553" height="368" src="/assets/images/new-arrivals2.webp" srcset="/assets/images/new-arrivals2@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/new-arrivals2_400x266.webp">
+                                   <img width="553" height="368" src="/assets/images/new-arrivals2.webp" srcset="/assets/images/new-arrivals2@2x.webp 2x" alt="arrivals2" class="w-full object-cover">
+                             </picture>                            
                             <div class="text-wrapper">
                                 <h3 class="text-white md:text-[27px] text-[24px] leading-none font-semibold">PLATEA PARTURIENT</h3>
                                 <p class="lg:text-[36px] text-[28px] text-primary font-medium leading-none mt-3">99.00 €</p>
                             </div>
                         </a>
                         <a href="#">
-                            <img width="553" height="368" src="/assets/images/new-arrivals3.webp" srcset="/assets/images/new-arrivals3@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/new-arrivals3_400x266.webp">
+                                   <img width="553" height="368" src="/assets/images/new-arrivals3.webp" srcset="/assets/images/new-arrivals3@2x.webp 2x" alt="arrivals2" class="w-full object-cover">
+                             </picture>                            
                             <div class="text-wrapper">
                                 <h3 class="text-white md:text-[27px] text-[24px] leading-none font-semibold">PLATEA PARTURIENT</h3>
                                 <p class="lg:text-[36px] text-[28px] text-primary font-medium leading-none mt-3">99.00 €</p>
@@ -350,7 +381,12 @@
             <div class="grid lg:grid-cols-10 grid-cols-1 gap-5 mt-12 arrivalsWrapper">
                 <div class="lg:col-span-4">
                     <a href="#" class="block h-full">
-                        <img width="520" height="535" src="/assets/images/featured-categories1.webp" srcset="/assets/images/featured-categories1@2x.webp 2x" alt="arrivals1" class="h-full object-cover w-full">
+                        <picture>
+                            <source 
+                               media="(max-width: 465px)"
+                               srcset="/assets/images/featured-categories1.webp">
+                               <img width="553" height="368" src="/assets/images/featured-categories1.webp" srcset="featured-categories1@2x.webp 2x" alt="arrivals2" class="h-full w-full object-cover">
+                         </picture>                       
                         <div class="text-wrapper">
                             <h3 class="text-white md:text-[48px] text-[28px] leading-none font-semibold">FEATURE</h3>
                         </div>
@@ -359,25 +395,45 @@
                 <div class="lg:col-span-6">
                     <div class="grid sm:grid-cols-2 grid-cols-1 gap-5">
                         <a href="#">
-                            <img width="385" height="258" src="/assets/images/featured-categories2.webp" srcset="/assets/images/featured-categories2@2x.webp 2x" alt="arrivals1" class="w-full">
-                            <div class="text-wrapper">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-categories2.webp">
+                                   <img width="385" height="258" src="/assets/images/featured-categories2.webp" srcset="featured-categories2@2x.webp 2x" alt="arrivals2" class="w-full object-cover">
+                             </picture>                       
+                                <div class="text-wrapper">
                                 <h4 class="text-white md:text-[28px] text-[24px] leading-none font-semibold">POULTRY</h4>
                             </div>
                         </a>
                         <a href="#">
-                            <img width="385" height="258" src="/assets/images/featured-categories3.webp" srcset="/assets/images/featured-categories3@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-categories3.webp">
+                                   <img width="385" height="258" src="/assets/images/featured-categories3.webp" srcset="featured-categories3@2x.webp 2x" alt="arrivals2" class="w-full object-cover">
+                             </picture>                       
                             <div class="text-wrapper">
                                 <h4 class="text-white md:text-[28px] text-[24px] leading-none font-semibold">SEAFOOD</h4>
                             </div>
                         </a>
                         <a href="#">
-                            <img width="385" height="258" src="/assets/images/featured-categories4.webp" srcset="/assets/images/featured-categories4@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-categories4.webp">
+                                   <img width="385" height="258" src="/assets/images/featured-categories4.webp" srcset="featured-categories4@2x.webp 2x" alt="arrivals2" class="w-full object-cover">
+                             </picture>                       
                             <div class="text-wrapper">
                                 <h4 class="text-white md:text-[28px] text-[24px] leading-none font-semibold">BEVERAGE</h4>
                             </div>
                         </a>
                         <a href="#">
-                            <img width="385" height="258" src="/assets/images/featured-categories5.webp" srcset="/assets/images/featured-categories5@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-categories5.webp">
+                                   <img width="385" height="258" src="/assets/images/featured-categories5.webp" srcset="featured-categories5@2x.webp 2x" alt="arrivals2" class="w-full object-cover">
+                             </picture>                       
                             <div class="text-wrapper">
                                 <h4 class="text-white md:text-[28px] text-[24px] leading-none font-semibold">SAUCE</h4>
                             </div>
@@ -390,7 +446,7 @@
       <!-- End Featured Categories -->
 
       <!-- Categories -->
-      <section class="md:pt-16 md:pb-[72px] py-10 bg-no-repeat bg-cover relative" style="background-image:url('/assets/images/featured-bg.webp')">
+      <section class="md:pt-16 md:pb-[72px] py-10 bg-no-repeat bg-cover relative" style="background-image:url('../src/assets/images/featured-bg.webp')">
         <div class="bg-secondary opacity-60 absolute w-full top-0 bottom-0 left-0 right-0"></div>
         <div class="container">
               <div class="flex relative flex-wrap md:gap-[50px] gap-8 items-center justify-center">
@@ -450,14 +506,19 @@
 
       <!-- Products -->
       <section class="bg-secondary md:pt-[52px] pt-10 md:pb-16 pb-10">
-            <div class="xl:max-w-[1508px] bg-no-repeat bg-cover lg:py-16 py-10 lg:px-20 md:px-10 px-4 mx-auto" style="background-image:url('/assets/images/wood-bg.webp')">
+            <div class="xl:max-w-[1508px] bg-no-repeat bg-cover lg:py-16 py-10 lg:px-20 md:px-10 px-4 mx-auto" style="background-image:url('../src/assets/images/wood-bg.webp')">
                 <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white  text-center">FEATURED PRODUCTS</h2>
                 <div class="grid md:mt-16 mt-10 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 rowGap">
 
                     <!-- Product Col -->
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
-                            <img width="325" height="216" src="/assets/images/featured-product-1.webp" srcset="/assets/images/featured-product-1@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-product-1.webp">
+                                   <img width="325" height="216" src="/assets/images/featured-product-1.webp" srcset="/assets/images/featured-product-1@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            </picture>                       
                         </a>
                         <div class="pt-4 px-6 pb-4">
                             <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
@@ -485,7 +546,12 @@
 
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
-                            <img width="325" height="216" src="/assets/images/featured-product-2.webp" srcset="/assets/images/featured-product-2@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-product-2.webp">
+                                   <img width="325" height="216" src="/assets/images/featured-product-2.webp" srcset="/assets/images/featured-product-2@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            </picture>                       
                         </a>
                         <div class="pt-4 px-6 pb-4">
                             <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
@@ -511,7 +577,12 @@
                     </div>
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
-                            <img width="325" height="216" src="/assets/images/featured-product-3.webp" srcset="/assets/images/featured-product-3@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-product-3.webp">
+                                   <img width="325" height="216" src="/assets/images/featured-product-3.webp" srcset="/assets/images/featured-product-3@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            </picture>                       
                         </a>
                         <div class="pt-4 px-6 pb-4">
                             <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
@@ -537,7 +608,12 @@
                     </div>
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
-                            <img width="325" height="216" src="/assets/images/featured-product-4.webp" srcset="/assets/images/featured-product-4@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-product-4.webp">
+                                   <img width="325" height="216" src="/assets/images/featured-product-4.webp" srcset="/assets/images/featured-product-4@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            </picture>                       
                         </a>
                         <div class="pt-4 px-6 pb-4">
                             <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
@@ -563,7 +639,12 @@
                     </div>
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
-                            <img width="325" height="216" src="/assets/images/featured-product-1.webp" srcset="/assets/images/featured-product-1@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-product-1.webp">
+                                   <img width="325" height="216" src="/assets/images/featured-product-1.webp" srcset="/assets/images/featured-product-1@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            </picture>                       
                         </a>
                         <div class="pt-4 px-6 pb-4">
                             <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
@@ -589,7 +670,12 @@
                     </div>
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
-                            <img width="325" height="216" src="/assets/images/featured-product-2.webp" srcset="/assets/images/featured-product-2@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-product-2.webp">
+                                   <img width="325" height="216" src="/assets/images/featured-product-2.webp" srcset="/assets/images/featured-product-2@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            </picture>                       
                         </a>
                         <div class="pt-4 px-6 pb-4">
                             <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
@@ -615,7 +701,12 @@
                     </div>
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
-                            <img width="325" height="216" src="/assets/images/featured-product-3.webp" srcset="/assets/images/featured-product-3@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-product-3.webp">
+                                   <img width="325" height="216" src="/assets/images/featured-product-3.webp" srcset="/assets/images/featured-product-3@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            </picture>                       
                         </a>
                         <div class="pt-4 px-6 pb-4">
                             <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
@@ -641,7 +732,12 @@
                     </div>
                     <div class="bg-[#0f0f0f] relative">
                         <a href="#" class="block overflow-hidden w-full">
-                            <img width="325" height="216" src="/assets/images/featured-product-4.webp" srcset="/assets/images/featured-product-4@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            <picture>
+                                <source 
+                                   media="(max-width: 465px)"
+                                   srcset="/assets/images/featured-product-4.webp">
+                                   <img width="325" height="216" src="/assets/images/featured-product-4.webp" srcset="/assets/images/featured-product-4@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                            </picture>                       
                         </a>
                         <div class="pt-4 px-6 pb-4">
                             <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
@@ -688,7 +784,13 @@
                         <a href="#" class="btn style2">CONTACT US</a>
                     </div>
                 </div>
-                <img width="533" height="350" src="/assets/images/gcc-golden-foil.webp" srcset="/assets/images/gcc-golden-foil@2x.webp 2x" alt="golden" class="lg:max-w-[40%]">
+                <picture>
+                    <source 
+                       media="(max-width: 465px)"
+                       srcset="/assets/images/gcc-golden-foil.webp">
+                       <img width="533" height="350" src="/assets/images/gcc-golden-foil.webp" srcset="/assets/images/gcc-golden-foil@2x.webp 2x" alt="golden" class="lg:max-w-[40%]">
+                </picture>                       
+
             </div>
         </div>
       </section>
@@ -698,7 +800,7 @@
       <section class="bg-secondary border-t-2 border-solid border-primary">
         <div class="container">
             <div class="flex items-center lg:gap-10 lg:flex-nowrap flex-wrap">
-                <img width="600" height="355" src="/assets/images/newsletter-image.webp" srcset="/assets/images/newsletter-image@2x.webp 2x" alt="newsletter" class="lg:max-w-[45%]">
+                <img width="600" height="355" src="/assets/images/newsletter-image.webp" srcset="/assets/images/newsletter-image@2x.webp 2x" alt="newsletter" class="lg:max-w-[45%]">               
                 <div class="lg:max-w-[55%] py-6 flex items-center flex-col text-center w-full">
                     <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white">JOIN OUR NEWSLETTER NOW</h2>
                     <p class="text-base font-normal text-white mt-6 max-w-[490px] mx-auto">
@@ -798,7 +900,12 @@
 
                 <div class="bg-[#0f0f0f] relative">
                     <a href="#" class="block overflow-hidden">
-                        <img width="434" height="302" src="/assets/images/inspiration1.webp" srcset="/assets/images/inspiration1@2x.webp 2x" alt="inspiration" class="max-h-[304px] w-full transition-all duration-200 ease-linear hover:scale-105">
+                        <picture>
+                            <source 
+                               media="(max-width: 465px)"
+                               srcset="/assets/images/inspiration1.webp">
+                               <img width="434" height="302" src="/assets/images/inspiration1.webp" srcset="/assets/images/inspiration1@2x.webp 2x" alt="inspiration" class="max-h-[304px] w-full transition-all duration-200 ease-linear hover:scale-105">
+                        </picture>   
                     </a>
                     <div class="pt-8 pb-8 ps-10 pe-8">
                         <a href="#" class="text-[27px] text-white font-normal text-center transition-all duration-200 ease-linear hover:text-primary">
@@ -827,7 +934,12 @@
                 </div>
                 <div class="bg-[#0f0f0f] relative">
                     <a href="#" class="block overflow-hidden">
-                        <img width="434" height="302" src="/assets/images/inspiration2.webp" srcset="/assets/images/inspiration2@2x.webp 2x" alt="inspiration" class="max-h-[304px] w-full transition-all duration-200 ease-linear hover:scale-105">
+                        <picture>
+                            <source 
+                               media="(max-width: 465px)"
+                               srcset="/assets/images/inspiration2.webp">
+                               <img width="434" height="302" src="/assets/images/inspiration2.webp" srcset="/assets/images/inspiration2@2x.webp 2x" alt="inspiration" class="max-h-[304px] w-full transition-all duration-200 ease-linear hover:scale-105">
+                        </picture>   
                     </a>
                     <div class="pt-8 pb-8 ps-10 pe-8">
                         <a href="#" class="text-[27px] text-white font-normal text-center transition-all duration-200 ease-linear hover:text-primary">
@@ -856,7 +968,12 @@
                 </div>
                 <div class="bg-[#0f0f0f] relative">
                     <a href="#" class="block overflow-hidden">
-                        <img width="434" height="302" src="/assets/images/inspiration3.webp" srcset="/assets/images/inspiration3@2x.webp 2x" alt="inspiration" class="max-h-[304px] w-full transition-all duration-200 ease-linear hover:scale-105">
+                        <picture>
+                            <source 
+                               media="(max-width: 465px)"
+                               srcset="/assets/images/inspiration3.webp">
+                               <img width="434" height="302" src="/assets/images/inspiration3.webp" srcset="/assets/images/inspiration3@2x.webp 2x" alt="inspiration" class="max-h-[304px] w-full transition-all duration-200 ease-linear hover:scale-105">
+                        </picture>   
                     </a>
                     <div class="pt-8 pb-8 ps-10 pe-8">
                         <a href="#" class="text-[27px] text-white font-normal text-center transition-all duration-200 ease-linear hover:text-primary">
