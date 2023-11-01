@@ -219,5 +219,8 @@
   .mobile-menu  .show-menu {
     margin-left: 0 !important;
   }
+  .mobile-menu{
+    @apply md:hidden
+  }
   /******** New Menu Css *********/
 }
