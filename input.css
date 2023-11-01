@@ -40,16 +40,16 @@
     @apply flex items-center md:flex-row flex-col gap-8 justify-end !important;
   }
   .btn {
-    @apply border-primary border-[3px] border-solid px-4 py-3 inline-block text-[20px] text-white font-semibold relative overflow-hidden transition-all duration-200 ease-in;
+    @apply border-primary border-[3px] border-solid px-4 py-3 inline-block text-[20px] text-white font-semibold relative overflow-hidden ;
   }
   .btn:hover {
     @apply bg-primary;
   }
   .btn2 {
-    @apply text-lg font-medium text-white px-[38px] py-[13.5px] bg-primary inline-block leading-none transition-all duration-200 ease-linear border-primary border-[3px] border-solid;
+    @apply text-lg font-medium text-white px-[38px] py-[13.5px] bg-primary inline-block leading-none  border-primary border-[3px] border-solid;
   }
   .btn.style2 {
-    @apply border-primary border-[3px] border-solid px-[38px] leading-none py-[13.5px] inline-block text-lg text-white font-semibold relative overflow-hidden transition-all duration-200 ease-in;
+    @apply border-primary border-[3px] border-solid px-[38px] leading-none py-[13.5px] inline-block text-lg text-white font-semibold relative overflow-hidden ;
   }
   .btn2:hover {
     @apply bg-transparent;
