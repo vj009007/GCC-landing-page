@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   .container {
     @apply xl:max-w-[1364px] !important;
@@ -15,11 +14,9 @@
   body {
     font-family: "Poppins", sans-serif;
   }
-
 }
 
 @layer components {
-
   .arrow-Style .slick-arrow {
     @apply p-5 md:p-7 m-0 bg-[#333333] text-[0px] absolute top-[55%] md:top-[40%] translate-y-[-50%] z-10;
   }
@@ -41,7 +38,7 @@
     @apply flex items-center md:flex-row flex-col gap-8 justify-end !important;
   }
   .btn {
-    @apply border-primary border-[3px] border-solid px-4 py-3 inline-block text-[20px] text-white font-semibold relative overflow-hidden ;
+    @apply border-primary border-[3px] border-solid px-4 py-3 inline-block text-[20px] text-white font-semibold relative overflow-hidden;
   }
   .btn:hover {
     @apply bg-primary;
@@ -50,7 +47,7 @@
     @apply text-lg font-medium text-white px-[38px] py-[13.5px] bg-primary inline-block leading-none  border-primary border-[3px] border-solid;
   }
   .btn.style2 {
-    @apply border-primary border-[3px] border-solid px-[38px] leading-none py-[13.5px] inline-block text-lg text-white font-semibold relative overflow-hidden ;
+    @apply border-primary border-[3px] border-solid px-[38px] leading-none py-[13.5px] inline-block text-lg text-white font-semibold relative overflow-hidden;
   }
   .btn2:hover {
     @apply bg-transparent;
@@ -104,7 +101,7 @@
     @apply bg-primary border-x-2 border-[#414141] text-center justify-center cursor-pointer;
   }
 
-  .categories-nav .categories > ul.sub-menu{
+  .categories-nav .categories > ul.sub-menu {
     @apply -left-[2px] -right-[2px];
   }
 
@@ -114,7 +111,7 @@
   }
 
   .menu .sub-menu {
-    @apply opacity-0 invisible transition-all ease-in-out delay-150 absolute z-10 flex flex-col grid-cols-1 bg-black top-[50px] lg:top-[54px] xl:top-[58px]
+    @apply opacity-0 invisible transition-all ease-in-out delay-150 absolute z-10 flex flex-col grid-cols-1 bg-black top-[50px] lg:top-[54px] xl:top-[58px];
   }
 
   .menu-hover > li:hover .sub-menu {
@@ -124,7 +121,6 @@
   .categories.active > .sub-menu {
     @apply visible opacity-100;
   }
-
 
   /* Sub nav - Level 1 */
   .menu .sub-menu li {
@@ -161,27 +157,67 @@
     @apply visible opacity-100;
   }
 
-
   /* Mobile Nav */
   header.active .humburger {
     @apply relative transition-all duration-300 ease-linear;
   }
 
-  
-/* Shopping Cart */
+  /* Shopping Cart */
 
   .shopping-cart {
-    @apply fixed top-0 -left-full right-0 w-full transition-all duration-300 z-10 overflow-auto h-[100vh] 
+    @apply fixed top-0 -left-full right-0 w-full transition-all duration-300 z-10 overflow-auto h-[100vh];
   }
 
   body.cart-active .shopping-cart {
     @apply left-0;
   }
 
-
   /******  New CSS *******/
-  .banner-slider-wrapper{
-    background-image:url('/assets/images/black-wood.webp');
+  .banner-slider-wrapper {
+    background-image: url("/assets/images/black-wood.webp");
     @apply bg-no-repeat bg-cover;
   }
+  /******** New Menu Css *********/
+  .mobile-menu ul li {
+    color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #852470;
+  }
+  .mobile-menu  ul li a:hover {
+    background-color: #600f4e;
+  }
+  .mobile-menu  li span {
+    font-size: 1.5em;
+    line-height: 0.25em;
+  }
+  .mobile-menu  .hide {
+    margin-left: -300px;
+    transition: all 0.8s ease;
+  }
+
+  .mobile-menu  .side-menu {
+    position: absolute;
+    top: 0px;
+    background: #eeeeee;
+    color: white;
+    width: 299px;
+    height: 350px;
+    background: transparent;
+    background-color: #982a80;
+  }
+  .mobile-menu .side-menu ul {
+    border-top: 1px solid #600f4e;
+  }
+  .mobile-menu  .side-menu ul li a {
+    background-color: #982a80;
+  }
+  .mobile-menu  .side-menu:last-child ul li a {
+    background-color: #a93c91;
+  }
+  .mobile-menu  .show-menu {
+    margin-left: 0 !important;
+  }
+  /******** New Menu Css *********/
 }

@@ -1108,11 +1108,64 @@ body.cart-active .shopping-cart {
 
 /******  New CSS *******/
 
-.banner-slider-wrapper{
-  background-image:url('/assets/images/black-wood.webp');
+.banner-slider-wrapper {
+  background-image: url("/assets/images/black-wood.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/******** New Menu Css *********/
+
+.mobile-menu ul li {
+  color: #333;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #852470;
+}
+
+.mobile-menu  ul li a:hover {
+  background-color: #600f4e;
+}
+
+.mobile-menu  li span {
+  font-size: 1.5em;
+  line-height: 0.25em;
+}
+
+.mobile-menu  .hide {
+  margin-left: -300px;
+  transition: all 0.8s ease;
+}
+
+.mobile-menu  .side-menu {
+  position: absolute;
+  top: 0px;
+  background: #eeeeee;
+  color: white;
+  width: 299px;
+  height: 350px;
+  background: transparent;
+  background-color: #982a80;
+}
+
+.mobile-menu .side-menu ul {
+  border-top: 1px solid #600f4e;
+}
+
+.mobile-menu  .side-menu ul li a {
+  background-color: #982a80;
+}
+
+.mobile-menu  .side-menu:last-child ul li a {
+  background-color: #a93c91;
+}
+
+.mobile-menu  .show-menu {
+  margin-left: 0 !important;
+}
+
+/******** New Menu Css *********/
 
 .sr-only {
   position: absolute;
@@ -2567,6 +2620,11 @@ body.cart-active .shopping-cart {
   border-color: rgb(96 96 96 / var(--tw-border-opacity));
 }
 
+.border-\[\#a99c67\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(169 156 103 / var(--tw-border-opacity));
+}
+
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(167 154 102 / var(--tw-border-opacity));
@@ -3186,6 +3244,11 @@ body.cart-active .shopping-cart {
   color: rgb(155 155 155 / var(--tw-text-opacity));
 }
 
+.text-\[\#9d9d9d\] {
+  --tw-text-opacity: 1;
+  color: rgb(157 157 157 / var(--tw-text-opacity));
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -3204,11 +3267,6 @@ body.cart-active .shopping-cart {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#9d9d9d\] {
-  --tw-text-opacity: 1;
-  color: rgb(157 157 157 / var(--tw-text-opacity));
 }
 
 .underline {
