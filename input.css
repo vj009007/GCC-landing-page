@@ -54,6 +54,7 @@
   .btn2:hover {
     @apply bg-transparent;
   }
+
   .slick-dots {
     @apply hidden md:flex flex-row items-center justify-center list-none gap-4 mt-10 absolute md:relative opacity-0 md:opacity-100;
   }
