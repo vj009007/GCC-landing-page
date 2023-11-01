@@ -3206,6 +3206,11 @@ body.cart-active .shopping-cart {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#9d9d9d\] {
+  --tw-text-opacity: 1;
+  color: rgb(157 157 157 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
