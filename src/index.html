@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GCC</title>
+      <meta name="description" content="GCC meta description goes here / for SEO purpose">
+      <link href="assets/font-awesome/css/fontawesome.css" rel="stylesheet">
+      <link href="assets/font-awesome/css/light.css" rel="stylesheet">
+      <link href="assets/font-awesome/css/sharp-light.css" rel="stylesheet">
+      <link href="assets/font-awesome/css/sharp-solid.css" rel="stylesheet">
+      <link href="assets/font-awesome/css/regular.css" rel="stylesheet">
+      <link href="assets/font-awesome/css/brands.css" rel="stylesheet">
+
+      <link href="assets/css/slick.min.css" rel="stylesheet">
+      <link href="/dist/output.css" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+   </head>
+   <body>
+
+
+      <header>
+        <!-- Top Bar -->
+         <div class="bg-[#bdae72] py-2 hidden md:block">
+            <div class="container">
+               <div class="flex items-center justify-between gap-4 lg:gap-8 xl:gap-12">
+                  <div class="flex items-center gap-4 text-white">
+                     <i class="fa-sharp fa-solid fa-calendar-days text-xl lg:text-2xl"></i>
+                     <p class="text-sm lg:text-base leading-[1.2] lg:leading-[1.1] font-normal tracking-wide">Lieferung zum gewünschten Termin</p>
+                  </div>
+                  <div class="flex items-center gap-4 text-white">
+                     <i class="fa-sharp fa-solid fa-truck text-xl lg:text-2xl"></i>
+                     <p class="text-sm lg:text-base leading-[1.2] lg:leading-[1.1] font-normal">Kostenloser Versand ab €150 Bestellwert</p>
+                  </div>
+                  <div class="flex items-center gap-4 text-white">
+                     <i class="fa-light fa-snowflake text-xl lg:text-3xl"></i>
+                     <p class="text-sm lg:text-base leading-[1.2] lg:leading-[1.1] font-normal">Garantierte Kühlkette</p>
+                  </div>
+                  <div class="flex items-center md:gap-3 lg:gap-4 xl:gap-8 md:text-xl lg:text-2xl xl:text-3xl">
+                     <a href="#" aria-label="facebook">
+                     <i class="fa-brands fa-facebook-f text-white"></i>
+                     </a>
+                     <a href="#" aria-label="instagram">
+                     <i class="fa-brands fa-instagram text-white"></i>
+                     </a>
+                     <a href="#" aria-label="youtube">
+                     <i class="fa-brands fa-youtube text-white"></i>
+                     </a>
+                     <a href="#" aria-label="pinterest">
+                     <i class="fa-brands fa-pinterest text-white"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ENd Top Bar -->
+
+         <!-- Logo and user options -->
+         <div class="bg-secondary pt-8 pb-8 md:pb-0">
+            <div class="container flex justify-between items-center">
+                <div class="humburger flex flex-col gap-[10px] md:hidden">
+                    <i class="fa-regular fa-bars text-white text-3xl"></i>
+                </div>
+                
+               <div class="w-36 lg:w-auto md:block hidden">
+                  <img width="179" height="136" src="assets/images/logo.webp" srcset="assets/images/logo_2x.webp 2x" alt="">
+               </div>
+
+               <div class="lg:w-auto object-cover md:hidden block">
+                    <img width="180" height="38" src="assets/images/GCC-logo-mob.webp" srcset="assets/images/GCC-logo-mob.webp 2x" alt="">
+                </div>
+
+                <div class="text-white text-2xl relative shopping-btn md:hidden cursor-pointer">
+                    <i class="fa-sharp fa-regular fa-bag-shopping"></i>
+                 </div>
+
+               <div class="md:w-[300px] lg:w-[400px] xl:w-[515px] hidden md:block relative">
+                    <label class="sr-only" for="search">Search</label>
+                  <input id="search" class="bg-transparent border-2 py-3 pl-4 pr-10 ml-0 lg:ml-4 text-white text-sm border-primary w-full" type="search" name="search" value="" placeholder="Produktsuche">
+                  <button class="absolute right-3 lg:right-0 top-3 text-[#999999] text-xl" type="submit" name="submit" aria-label="submit button"><i class="fa-regular fa-magnifying-glass"></i><span class="sr-only">Search</span></button>
+                </div>
+
+               <div class="md:gap-5 lg:gap-5 xl:gap-8 items-center hidden md:flex">
+                  <img width="104" height="72" class="w-auto md:w-14 lg:w-20 xl:w-auto" src="assets/images/vip-clup.webp" srcset="assets/images/vip-clup_2x.webp 2x" alt="">
+                  <a href="#" class="text-primary md:text-xl lg:text-2xl xl:text-5xl" aria-label="profile">
+                    <i class="fa-sharp fa-regular fa-user"></i>
+                  </a>
+                  <a href="#" class="text-primary md:text-xl lg:text-2xl xl:text-5xl" aria-label="Favourites">
+                    <i class="fa-sharp fa-regular fa-heart"></i>
+                  </a>
+                  <a href="#" class="text-primary md:text-xl lg:text-2xl xl:text-5xl relative" aria-label="Shoping Cart 0">
+                    <i class="fa-sharp fa-regular fa-bag-shopping"><span class="sr-only">Shoping Cart</span></i>
+                    <span class="text-secondary bg-white text-xl leading-none font-medium rounded-full absolute -right-4 top-0 px-2 py-1 -scale-75 lg:scale-100">0</span>
+                </a>
+                  <div class="text-white font-medium md:text-[18px] lg:text-[20px] xl:text-[27px] ml-3">0.00 €</div>
+               </div>
+            </div>
+            <!-- End Logo and user options section -->
+
+            <!-- Navigation -->
+            <nav class="mt-7 border-y-2 border-[#414141] hidden relative z-20 md:block">
+                <div class="container  pl-0 flex gap-5 lg:gap-10">
+                    <div class="categories-nav">
+                        <ul class="menu flex">
+                            <li class="have-sub-menu categories active">
+                                <div>KATEGORIE <i class="fa-light fa-angle-down"></i></div>
+                                <ul class="sub-menu">
+                                    <li class="have-sub-menu">
+                                        <a href="#"><img width="43" height="30" src="assets/images/icon-rind.webp" srcset="assets/images/icon-rind.webp 2x" alt="">Rind <i class="fa-light fa-angle-right"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Rind</a></li>
+                                            <li><a href="#">Schwein</a></li>
+                                            <li><a href="#">Level 2 Item <i class="fa-light fa-angle-right"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="#">Level 3 Item</a></li>
+                                                    <li><a href="#">Level 3 Item</a></li>
+                                                    <li><a href="#">Level 3 Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Level 2 Item</a></li>
+                                            <li><a href="#">Level 2 Item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="have-sub-menu"><a href="#"><img width="43" height="30" src="assets/images/icon-schwein.webp" srcset="assets/images/icon-schwein.webp 2x" alt="">Schwein <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li class="have-sub-menu">
+                                       <a href="#"><img width="43" height="30" src="assets/images/icon-rind.webp" srcset="assets/images/icon-rind.webp 2x" alt="">Rind <i class="fa-light fa-angle-right"></i></a>
+                                       <ul class="sub-menu">
+                                           <li><a href="#">Level 2 Item</a></li>
+                                           <li><a href="#">Level 2 Item</a></li>
+                                           <li><a href="#">Level 2 Item <i class="fa-light fa-angle-right"></i></a>
+                                               <ul class="sub-menu">
+                                                   <li><a href="#">Level 3 Item</a></li>
+                                                   <li><a href="#">Level 3 Item</a></li>
+                                                   <li><a href="#">Level 3 Item</a></li>
+                                               </ul>
+                                           </li>
+                                       </ul>
+                                    </li>    
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-gef.webp" srcset="assets/images/icon-gef.webp 2x" alt="">Geflügel <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-wurstwaren.webp" srcset="assets/images/icon-wurstwaren.webp 2x" alt="">Wurstwaren <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-kalb.webp" srcset="assets/images/icon-kalb.webp 2x" alt="">Kalb <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-lamm.webp" srcset="assets/images/icon-lamm.webp 2x" alt="">Lamm <i class="fa-light fa-angle-right"></i></a></li>
+                                    <li><a href="#"><img width="43" height="30" src="assets/images/icon-wild.webp" srcset="assets/images/icon-wild.webp 2x" alt="">Wild <i class="fa-light fa-angle-right"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                     <ul class="menu menu-hover flex justify-between w-full">
+                         <li class="have-sub-menu">
+                             <a href="#">Fleisch <i class="fa-light fa-angle-down"></i></a>
+                             <ul class="sub-menu">
+                                 <li class="have-sub-menu"><a href="#">Rind</a>
+                                     <ul class="sub-menu">
+                                         <li><a href="#">Level 3 Item</a></li>
+                                         <li><a href="#">Level 3 Item</a></li>
+                                         <li><a href="#">Level 3 Item</a></li>
+                                     </ul>
+                                 </li>
+                                 <li><a href="#">Schwein</a></li>
+                                 <li><a href="#">Sub Menu Item <i class="fa-light fa-angle-right"></i></a>
+                                     <ul class="sub-menu">
+                                         <li><a href="#">Level 3 Item</a></li>
+                                         <li><a href="#">Level 3 Item</a></li>
+                                         <li><a href="#">Level 3 Item</a></li>
+                                     </ul>
+                                 </li>
+                                 <li><a href="#">Sub Menu Item</a></li>
+                                 <li><a href="#">Sub Menu Item</a></li>
+                             </ul>
+                         </li>
+                         <li class="have-sub-menu">
+                             <a href="#">Seafood <i class="fa-light fa-angle-down"></i></a>
+                         </li>
+                         <li class="have-sub-menu">
+                             <a href="#">Würzen <i class="fa-light fa-angle-down"></i></a>
+                         </li>
+                         <li class="have-sub-menu">
+                             <a href="#">Sonstig <i class="fa-light fa-angle-down"></i></a>
+                         </li>
+                         <li class="have-sub-menu">
+                             <a href="#">Angebote <i class="fa-light fa-angle-down"></i></a>
+                         </li>
+                         <li class="have-sub-menu">
+                             <a href="#">Rezepte <i class="fa-light fa-angle-down"></i></a>
+                         </li>
+                     </ul>
+                </div>
+             </nav>
+             <!-- End Nav -->
+         </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Slider -->
+      <section class="relative bg-no-repeat bg-cover pt-10 md:pt-20 pb-10" style="background-image:url('../src/assets/images/black-wood.webp');">
+        <div class="container">
+            <div class="banner-slider arrow-Style">
+                <div class="slider-item">
+                    <div class="md:w-7/12 lg:w-4/12 flex flex-col gap-5 items-start pl-0 lg:pl-9 xl:pl-5">
+                        <h2 class="text-3xl md:text-[40px] leading-tight -mb-1 uppercase font-bold text-white">
+                            Lorem Ipsum
+                        </h2>
+                        <p class="text-[14px] md:text-base text-white leading-5 md:leading-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. 
+                        </p>
+                        <div class="text-primary font-bold text-2xl md:text-[42px] leading-tight">99.00 €</div>
+                        <a href="#" class="btn hidden sm:block">Jetzt Bestellen</a>
+                    </div>
+                    <div class="md:w-5/12 px-8 md:px-0">
+                        <img width="555" height="310" src="assets/images/headline-meat.webp" alt="featured">
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="md:w-7/12 lg:w-4/12 flex flex-col gap-5 items-start pl-0 lg:pl-9 xl:pl-5">
+                        <h2 class="text-3xl md:text-[40px] leading-tight -mb-1 uppercase font-bold text-white">
+                            Lorem Ipsum
+                        </h2>
+                        <p class="text-[14px] md:text-base text-white leading-5 md:leading-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. 
+                        </p>
+                        <div class="text-primary font-bold text-2xl md:text-[42px] leading-tight">99.00 €</div>
+                        <a href="#" class="btn hidden sm:block">Jetzt Bestellen</a>
+                    </div>
+                    <div class="md:w-5/12 px-8 md:px-0">
+                        <img width="555" height="310" src="assets/images/headline-meat.webp" alt="featured">
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="md:w-7/12 lg:w-4/12 flex flex-col gap-3 md:gap-5 items-start pl-0 lg:pl-9 xl:pl-5">
+                        <h2 class="text-3xl md:text-[40px] leading-tight -mb-1 uppercase font-bold text-white">
+                            Lorem Ipsum
+                        </h2>
+                        <p class="text-[14px] md:text-base text-white leading-5 md:leading-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. 
+                        </p>
+                        <div class="text-primary font-bold text-2xl md:text-[42px] leading-tight">99.00 €</div>
+                        <a href="#" class="btn hidden sm:block">Jetzt Bestellen</a>
+                    </div>
+                    <div class="md:w-5/12 px-8 md:px-0">
+                        <img width="555" height="310" src="assets/images/headline-meat.webp" alt="featured">
+                    </div>
+                </div>
+             </div>
+        </div>
+      </section>
+      <!-- End Slider -->
+
+      <div class="bg-secondary py-3 md:py-8">
+        <div class="container">
+            <div class="grid grid-cols-3 gap-2 md:gap-3">
+                <div class="bg-[#0f0f0f] py-[20px] md:py-[50px] ps-2 md:ps-8 pe-2 md:pe-5 flex items-center gap-5 flex-col lg:flex-row">
+                    <img width="105" height="113" src="assets/images/premium-meat.webp" alt="premium" class="block w-10 md:w-auto" >
+                    <div class="text-center">
+                        <div class="text-xs sm:text-base text-white uppercase font-medium ">PREMIUM-FLEISCH</div>
+                        <p class="text-base text-white font-normal leading-7 mt-2 hidden lg:block">
+                            Nur die besten Produkte, 
+                            tierischartgerecht und selektiert
+                            Für dich mit Liebe
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[#0f0f0f] py-[20px] md:py-[50px] ps-2 md:ps-8 pe-2 md:pe-5 flex items-center gap-5 flex-col lg:flex-row">
+                    <i class="fa-light fa-calendar-check text-primary text-4xl md:text-8xl"></i>
+                    <div class="text-center">
+                        <div class="text-xs sm:text-base text-white uppercase font-medium ">LIEFERTERMIN </div>
+                        <p class="text-base text-white font-normal leading-7 mt-2 hidden lg:block">
+                            Wählen Sie Ihre gewünschte 
+                            LieferungTag und wir liefern per
+                            Expresszustellung.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-[#0f0f0f] py-[20px] md:py-[50px] ps-2 md:ps-8 pe-2 md:pe-5 flex items-center gap-5 flex-col lg:flex-row">
+                    <i class="fa-light fa-snowflake text-primary text-4xl md:text-8xl"></i>
+                    <div class="text-center w-full">
+                        <div class="text-xs sm:text-base text-white uppercase font-medium ">PGARANTIERTE KÜHLKETTE</div>
+                        <p class="text-base text-white font-normal leading-7 mt-2 md:max-w-[200px] xl:mx-auto mx-auto  hidden lg:block">
+                            Ihr Fleisch ist garantiert
+                            gut gekühlt ankommen.
+                        </p>
+                    </div>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+
+    <!-- New Arrivals -->
+      <section class="bg-secondary pb-8 ">
+        <div class="bg-[#0f0f0f] max-w-[1509px] mx-auto lg:px-20 md:px-10 px-4 md:pt-14 md:pb-12 py-8">
+            <div class="flex items-center lg:gap-20 gap-10 flex-wrap">
+                <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white border-b-[4px] md:border-b-[6px] border-solid border-primary">
+                    <a href="#" class="">NEW ARRIVALS</a>
+                </h2>
+                <ul class="flex items-center md:gap-14 gap-6 navTabs flex-wrap">
+                    <li>
+                        <a href="#">NEW</a>
+                    </li>
+                    <li>
+                        <a href="#">FEATURED</a>
+                    </li>
+                    <li>
+                        <a href="#">BEST SELLER</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid lg:grid-cols-7 grid-cols-1 gap-11 mt-10 arrivalsWrapper">
+                <div class="lg:col-span-4">
+                    <a href="#" class="block h-full">
+                        <img width="752" height="772" src="assets/images/new-arrivals1.webp" srcset="assets/images/new-arrivals1@2x.webp 2x" alt="arrivals1" class="h-full w-full object-cover">
+                        <div class="text-wrapper">
+                            <h3 class="text-white md:text-[40px] text-[28px] leading-none font-semibold">PLATEA PARTURIENT</h3>
+                            <p class="lg:text-[50px] text-3xl text-primary font-medium leading-none mt-3">99.00 €</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lg:col-span-3">
+                    <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-9">
+                        <a href="#">
+                            <img width="553" height="368" src="assets/images/new-arrivals2.webp" srcset="assets/images/new-arrivals2@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <div class="text-wrapper">
+                                <h3 class="text-white md:text-[27px] text-[24px] leading-none font-semibold">PLATEA PARTURIENT</h3>
+                                <p class="lg:text-[36px] text-[28px] text-primary font-medium leading-none mt-3">99.00 €</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img width="553" height="368" src="assets/images/new-arrivals3.webp" srcset="assets/images/new-arrivals3@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <div class="text-wrapper">
+                                <h3 class="text-white md:text-[27px] text-[24px] leading-none font-semibold">PLATEA PARTURIENT</h3>
+                                <p class="lg:text-[36px] text-[28px] text-primary font-medium leading-none mt-3">99.00 €</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- New Arrivals -->
+
+      <!-- Featured Categories -->
+      <section class="bg-secondary md:pt-2 pt-0 pb-12 px-0 md:px-10 lg:px-0">
+        <div class="container">
+            <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white  text-center">FEATURED CATEGORIES</h2>
+            <div class="grid lg:grid-cols-10 grid-cols-1 gap-5 mt-12 arrivalsWrapper">
+                <div class="lg:col-span-4">
+                    <a href="#" class="block h-full">
+                        <img width="520" height="535" src="assets/images/featured-categories1.webp" srcset="assets/images/featured-categories1@2x.webp 2x" alt="arrivals1" class="h-full object-cover w-full">
+                        <div class="text-wrapper">
+                            <h3 class="text-white md:text-[48px] text-[28px] leading-none font-semibold">FEATURE</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="lg:col-span-6">
+                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-5">
+                        <a href="#">
+                            <img width="385" height="258" src="assets/images/featured-categories2.webp" srcset="assets/images/featured-categories2@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <div class="text-wrapper">
+                                <h4 class="text-white md:text-[28px] text-[24px] leading-none font-semibold">POULTRY</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img width="385" height="258" src="assets/images/featured-categories3.webp" srcset="assets/images/featured-categories3@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <div class="text-wrapper">
+                                <h4 class="text-white md:text-[28px] text-[24px] leading-none font-semibold">SEAFOOD</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img width="385" height="258" src="assets/images/featured-categories4.webp" srcset="assets/images/featured-categories4@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <div class="text-wrapper">
+                                <h4 class="text-white md:text-[28px] text-[24px] leading-none font-semibold">BEVERAGE</h4>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img width="385" height="258" src="assets/images/featured-categories5.webp" srcset="assets/images/featured-categories5@2x.webp 2x" alt="arrivals1" class="w-full">
+                            <div class="text-wrapper">
+                                <h4 class="text-white md:text-[28px] text-[24px] leading-none font-semibold">SAUCE</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- End Featured Categories -->
+
+      <!-- Categories -->
+      <section class="md:pt-16 md:pb-[72px] py-10 bg-no-repeat bg-cover relative" style="background-image:url('../src/assets/images/featured-bg.webp')">
+        <div class="bg-secondary opacity-60 absolute w-full top-0 bottom-0 left-0 right-0"></div>
+        <div class="container">
+              <div class="flex relative flex-wrap md:gap-[50px] gap-8 items-center justify-center">
+                    <div class="flex items-center gap-4">
+                        <img width="75" height="68" src="assets/images/icon-cow.webp" srcset="assets/images/icon-cow.webp 2x" alt="cow">
+                        <div>
+                            <h5 class="md:text-[38px] text-3xl font-semibold leading-none text-white">Rind</h5>
+                            <p class="md:text-[21px] text-lg font-light text-white mt-1">32 Products</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img width="84" height="65" src="assets/images/icon-pig.webp" srcset="assets/images/icon-pig.webp 2x" alt="Icon">
+                        <div>
+                            <h5 class="md:text-[38px] text-3xl font-semibold leading-none text-white">Schwein</h5>
+                            <p class="md:text-[21px] text-lg font-light text-white mt-1">12 Products</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img width="75" height="68" src="assets/images/icon-chick.webp" srcset="assets/images/icon-chick.webp 2x" alt="Icon">
+                        <div>
+                            <h5 class="md:text-[38px] text-3xl font-semibold leading-none text-white">Geflügel</h5>
+                            <p class="md:text-[21px] text-lg font-light text-white mt-1">27 Products</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img width="75" height="68" src="assets/images/icon-lamb.webp" srcset="assets/images/icon-lamb.webp" alt="Icon">
+                        <div>
+                            <h5 class="md:text-[38px] text-3xl font-semibold leading-none text-white">Lamm</h5>
+                            <p class="md:text-[21px] text-lg font-light text-white mt-1">13 Products</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img width="75" height="68" src="assets/images/icon-calb.webp" srcset="assets/images/icon-calb.webp 2x" alt="Icon">
+                        <div>
+                            <h5 class="md:text-[38px] text-3xl font-semibold leading-none text-white">Kalb</h5>
+                            <p class="md:text-[21px] text-lg font-light text-white mt-1">13 Products</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img width="75" height="68" src="assets/images/icon-meat.webp" srcset="assets/images/icon-meat.webp 2x" alt="Icon">
+                        <div>
+                            <h5 class="md:text-[38px] text-3xl font-semibold leading-none text-white">Wurstwaren</h5>
+                            <p class="md:text-[21px] text-lg font-light text-white mt-1">12 Products</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img width="75" height="68" src="assets/images/icon-wild.webp" srcset="assets/images/icon-wild.webp 2x" alt="Icon">
+                        <div>
+                            <h5 class="md:text-[38px] text-3xl font-semibold leading-none text-white">Wild</h5>
+                            <p class="md:text-[21px] text-lg font-light text-white mt-1">14 Products</p>
+                        </div>
+                    </div>
+              </div>
+        </div>
+      </section>
+      <!-- End Categories -->
+
+      <!-- Products -->
+      <section class="bg-secondary md:pt-[52px] pt-10 md:pb-16 pb-10">
+            <div class="xl:max-w-[1508px] bg-no-repeat bg-cover lg:py-16 py-10 lg:px-20 md:px-10 px-4 mx-auto" style="background-image:url('../src/assets/images/wood-bg.webp')">
+                <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white  text-center">FEATURED PRODUCTS</h2>
+                <div class="grid md:mt-16 mt-10 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 rowGap">
+
+                    <!-- Product Col -->
+                    <div class="bg-[#0f0f0f] relative">
+                        <a href="#" class="block overflow-hidden w-full">
+                            <img width="325" height="216" src="assets/images/featured-product-1.webp" srcset="assets/images/featured-product-1@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                        </a>
+                        <div class="pt-4 px-6 pb-4">
+                            <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
+                            <p class="text-[#606060] text-lg font-bold">Content <span class="font-medium">1000g</span></p>
+                            <div class="flex items-center gap-1 mt-5">
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            </div>
+                            <div class="md:text-[34px] text-2xl text-white font-medium mt-[10px]">99.00 €</div>
+                            <p class="text-lg text-[#606060] font-normal mt-1">99.00 €/kg</p>
+                        </div>
+                        <div class="absolute top-4 right-3 bg-[#0f0f0f] p-3 z-10 flex flex-col gap-4 items-center justify-center">
+                            <a href="#" aria-label="make favourite">
+                                <i class="fa-sharp fa-regular fa-heart text-[20px] text-white"></i>
+                            </a>
+                            <a href="#" aria-label="add to cart">
+                                <i class="fa-sharp fa-light fa-cart-shopping text-[20px] text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Product Col -->
+
+                    <div class="bg-[#0f0f0f] relative">
+                        <a href="#" class="block overflow-hidden w-full">
+                            <img width="325" height="216" src="assets/images/featured-product-2.webp" srcset="assets/images/featured-product-2@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                        </a>
+                        <div class="pt-4 px-6 pb-4">
+                            <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
+                            <p class="text-[#606060] text-lg font-bold">Content <span class="font-medium">1000g</span></p>
+                            <div class="flex items-center gap-1 mt-5">
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            </div>
+                            <div class="md:text-[34px] text-2xl text-white font-medium mt-[10px]">99.00 €</div>
+                            <p class="text-lg text-[#606060] font-normal mt-1">99.00 €/kg</p>
+                        </div>
+                        <div class="absolute top-4 right-3 bg-[#0f0f0f] p-3 z-10 flex flex-col gap-4 items-center justify-center">
+                            <a href="#" aria-label="make favourite">
+                                <i class="fa-sharp fa-regular fa-heart text-[20px] text-white"></i>
+                            </a>
+                            <a href="#" aria-label="add to cart">
+                                <i class="fa-sharp fa-light fa-cart-shopping text-[20px] text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#0f0f0f] relative">
+                        <a href="#" class="block overflow-hidden w-full">
+                            <img width="325" height="216" src="assets/images/featured-product-3.webp" srcset="assets/images/featured-product-3@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                        </a>
+                        <div class="pt-4 px-6 pb-4">
+                            <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
+                            <p class="text-[#606060] text-lg font-bold">Content <span class="font-medium">1000g</span></p>
+                            <div class="flex items-center gap-1 mt-5">
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            </div>
+                            <div class="md:text-[34px] text-2xl text-white font-medium mt-[10px]">99.00 €</div>
+                            <p class="text-lg text-[#606060] font-normal mt-1">99.00 €/kg</p>
+                        </div>
+                        <div class="absolute top-4 right-3 bg-[#0f0f0f] p-3 z-10 flex flex-col gap-4 items-center justify-center">
+                            <a href="#" aria-label="make favourite">
+                                <i class="fa-sharp fa-regular fa-heart text-[20px] text-white"></i>
+                            </a>
+                            <a href="#" aria-label="add to cart">
+                                <i class="fa-sharp fa-light fa-cart-shopping text-[20px] text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#0f0f0f] relative">
+                        <a href="#" class="block overflow-hidden w-full">
+                            <img width="325" height="216" src="assets/images/featured-product-4.webp" srcset="assets/images/featured-product-4@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                        </a>
+                        <div class="pt-4 px-6 pb-4">
+                            <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
+                            <p class="text-[#606060] text-lg font-bold">Content <span class="font-medium">1000g</span></p>
+                            <div class="flex items-center gap-1 mt-5">
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            </div>
+                            <div class="md:text-[34px] text-2xl text-white font-medium mt-[10px]">99.00 €</div>
+                            <p class="text-lg text-[#606060] font-normal mt-1">99.00 €/kg</p>
+                        </div>
+                        <div class="absolute top-4 right-3 bg-[#0f0f0f] p-3 z-10 flex flex-col gap-4 items-center justify-center">
+                            <a href="#" aria-label="make favourite">
+                                <i class="fa-sharp fa-regular fa-heart text-[20px] text-white"></i>
+                            </a>
+                            <a href="#" aria-label="add to cart">
+                                <i class="fa-sharp fa-light fa-cart-shopping text-[20px] text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#0f0f0f] relative">
+                        <a href="#" class="block overflow-hidden w-full">
+                            <img width="325" height="216" src="assets/images/featured-product-1.webp" srcset="assets/images/featured-product-1@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                        </a>
+                        <div class="pt-4 px-6 pb-4">
+                            <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
+                            <p class="text-[#606060] text-lg font-bold">Content <span class="font-medium">1000g</span></p>
+                            <div class="flex items-center gap-1 mt-5">
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            </div>
+                            <div class="md:text-[34px] text-2xl text-white font-medium mt-[10px]">99.00 €</div>
+                            <p class="text-lg text-[#606060] font-normal mt-1">99.00 €/kg</p>
+                        </div>
+                        <div class="absolute top-4 right-3 bg-[#0f0f0f] p-3 z-10 flex flex-col gap-4 items-center justify-center">
+                            <a href="#" aria-label="make favourite">
+                                <i class="fa-sharp fa-regular fa-heart text-[20px] text-white"></i>
+                            </a>
+                            <a href="#" aria-label="add to cart">
+                                <i class="fa-sharp fa-light fa-cart-shopping text-[20px] text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#0f0f0f] relative">
+                        <a href="#" class="block overflow-hidden w-full">
+                            <img width="325" height="216" src="assets/images/featured-product-2.webp" srcset="assets/images/featured-product-2@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                        </a>
+                        <div class="pt-4 px-6 pb-4">
+                            <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
+                            <p class="text-[#606060] text-lg font-bold">Content <span class="font-medium">1000g</span></p>
+                            <div class="flex items-center gap-1 mt-5">
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            </div>
+                            <div class="md:text-[34px] text-2xl text-white font-medium mt-[10px]">99.00 €</div>
+                            <p class="text-lg text-[#606060] font-normal mt-1">99.00 €/kg</p>
+                        </div>
+                        <div class="absolute top-4 right-3 bg-[#0f0f0f] p-3 z-10 flex flex-col gap-4 items-center justify-center">
+                            <a href="#" aria-label="make favourite">
+                                <i class="fa-sharp fa-regular fa-heart text-[20px] text-white"></i>
+                            </a>
+                            <a href="#" aria-label="add to cart">
+                                <i class="fa-sharp fa-light fa-cart-shopping text-[20px] text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#0f0f0f] relative">
+                        <a href="#" class="block overflow-hidden w-full">
+                            <img width="325" height="216" src="assets/images/featured-product-3.webp" srcset="assets/images/featured-product-3@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                        </a>
+                        <div class="pt-4 px-6 pb-4">
+                            <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
+                            <p class="text-[#606060] text-lg font-bold">Content <span class="font-medium">1000g</span></p>
+                            <div class="flex items-center gap-1 mt-5">
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            </div>
+                            <div class="md:text-[34px] text-2xl text-white font-medium mt-[10px]">99.00 €</div>
+                            <p class="text-lg text-[#606060] font-normal mt-1">99.00 €/kg</p>
+                        </div>
+                        <div class="absolute top-4 right-3 bg-[#0f0f0f] p-3 z-10 flex flex-col gap-4 items-center justify-center">
+                            <a href="#" aria-label="make favourite">
+                                <i class="fa-sharp fa-regular fa-heart text-[20px] text-white"></i>
+                            </a>
+                            <a href="#" aria-label="add to cart">
+                                <i class="fa-sharp fa-light fa-cart-shopping text-[20px] text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#0f0f0f] relative">
+                        <a href="#" class="block overflow-hidden w-full">
+                            <img width="325" height="216" src="assets/images/featured-product-4.webp" srcset="assets/images/featured-product-4@2x.webp 2x" alt="featured" class="w-full max-h-[216px] h-full object-cover transition-all duration-200 ease-in hover:scale-105">
+                        </a>
+                        <div class="pt-4 px-6 pb-4">
+                            <a href="#" class="text-[20px] text-white font-semibold leading-tight">SIRLOIN STEAK, CREEKSTONE FARMS USA</a>
+                            <p class="text-[#606060] text-lg font-bold">Content <span class="font-medium">1000g</span></p>
+                            <div class="flex items-center gap-1 mt-5">
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                                <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            </div>
+                            <div class="md:text-[34px] text-2xl text-white font-medium mt-[10px]">99.00 €</div>
+                            <p class="text-lg text-[#606060] font-normal mt-1">99.00 €/kg</p>
+                        </div>
+                        <div class="absolute top-4 right-3 bg-[#0f0f0f] p-3 z-10 flex flex-col gap-4 items-center justify-center">
+                            <a href="#" aria-label="make favourite">
+                                <i class="fa-sharp fa-regular fa-heart text-[20px] text-white"></i>
+                            </a>
+                            <a href="#" aria-label="add to cart">
+                                <i class="fa-sharp fa-light fa-cart-shopping text-[20px] text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+      </section>
+      <!-- End Products -->   
+
+      <!-- About -->
+      <section class="bg-secondary border-t-2 border-solid border-primary">
+        <div class="container">
+            <div class="flex items-center gap-10 lg:flex-nowrap flex-wrap lg:flex-row flex-col-reverse">
+                <div class="lg:max-w-[60%] py-12">
+                    <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white">About Our Shop</h2>
+                    <p class="text-lg font-normal text-white mt-7">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                        officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div class="flex items-center flex-wrap gap-5 mt-7">
+                        <a href="#" class="btn2">READ MORE</a>
+                        <a href="#" class="btn style2">CONTACT US</a>
+                    </div>
+                </div>
+                <img width="533" height="350" src="assets/images/gcc-golden-foil.webp" srcset="assets/images/gcc-golden-foil@2x.webp 2x" alt="golden" class="lg:max-w-[40%]">
+            </div>
+        </div>
+      </section>
+      <!-- End About -->
+
+      <!-- Newsletter -->
+      <section class="bg-secondary border-t-2 border-solid border-primary">
+        <div class="container">
+            <div class="flex items-center lg:gap-10 lg:flex-nowrap flex-wrap">
+                <img width="600" height="355" src="assets/images/newsletter-image.webp" srcset="assets/images/newsletter-image@2x.webp 2x" alt="newsletter" class="lg:max-w-[45%]">
+                <div class="lg:max-w-[55%] py-6 flex items-center flex-col text-center w-full">
+                    <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white">JOIN OUR NEWSLETTER NOW</h2>
+                    <p class="text-base font-normal text-white mt-6 max-w-[490px] mx-auto">
+                        <span class="text-primary">
+                            If you register for the newsletter for the first time, you will
+                        recieve the shipping costs
+                        </span> for your next order for free as soon
+                        as your registration is confirmed
+                    </p>
+                    <div class="flex items-center sm:flex-nowrap flex-wrap justify-center gap-3 mt-8 w-full">
+                        <label class="sr-only" for="email">Your Email</label>
+                        <input id="email" type="email" placeholder="Your Email Address" class="w-full block border-[3px] border-solid border-[#606060] bg-transparent px-8 py-3 outline-none text-base text-[#979797]">  
+                        <a href="#" class="btn2 px-6 whitespace-nowrap">REGISTER NOW</a>
+                    </div>
+                    <p class="text-base font-normal text-white mt-6 max-w-[470px] mx-auto">
+                        I have read the data protection regulations and I expressly agree to them with my registration.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- End Newsletter -->
+
+      <!-- Reviews -->
+      <section class="bg-secondary border-t-2 border-solid border-primary py-14">
+        <div class="container">
+            <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white text-center">Customer Review</h2>
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-10">
+                <div class="bg-[#0f0f0f] p-5 flex gap-6">
+                    <img width="108" height="108" src="assets/images/costumer1.webp" srcset="assets/images/costumer1.webp 2x" alt="costumer1" class="sm:max-w-[108px] max-w-[70px] sm:max-h-[108px] max-h-[70px]  rounded-full">
+                    <div class="flex flex-col justify-between gap-2">
+                       <div>
+                            <div class="text-[20px] font-medium text-white">Michael K.</div>
+                            <p class="mt-1 text-sm font-normal text-white leading-6">
+                                “The best meat I have ever eaten! 
+                                I love it.”
+                            </p>
+                       </div>
+                       <div>
+                            <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                            <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                       </div>
+                    </div>
+                </div>
+                <div class="bg-[#0f0f0f] p-5 flex gap-6">
+                    <img width="108" height="108" src="assets/images/costumer2.webp" srcset="assets/images/costumer2.webp 2x" alt="costumer" class="sm:max-w-[108px] max-w-[70px] sm:max-h-[108px] max-h-[70px]  rounded-full">
+                    <div class="flex flex-col justify-between gap-2">
+                       <div>
+                            <div class="text-[20px] font-medium text-white">Lolita</div>
+                            <p class="mt-1 text-sm font-normal text-white leading-6">
+                                “Fast packaging, perfectly adapted to
+                                the sensitive goods, friendly, fast service 
+                                and the quality of the goods is as 
+                                expected.”
+                            </p>
+                       </div>
+                       <div>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                   </div>
+                    </div>
+                </div>
+                <div class="bg-[#0f0f0f] p-5 flex gap-6">
+                    <img width="108" height="108" src="assets/images/costumer3.webp" srcset="assets/images/costumer3.webp 2x" alt="costumer" class="sm:max-w-[108px] max-w-[70px] sm:max-h-[108px] max-h-[70px]  rounded-full">
+                    <div class="flex flex-col justify-between gap-2">
+                       <div>
+                            <div class="text-[20px] font-medium text-white">Esmeralda</div>
+                            <p class="mt-1 text-sm font-normal text-white leading-6">
+                                “The ribeye was one of the best steaks I have ever had. Top quality stuff!.”
+                            </p>
+                       </div>
+                       <div>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                        <i class="fa-sharp fa-solid fa-star text-primary text-lg"></i>
+                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- End Reviews -->
+
+      <!-- Latest News -->
+      <section class="bg-secondary border-t-2 border-solid border-primary py-14">
+        <div class="container">
+            <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white text-center">OUR LATEST NEWS</h2>
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-10">
+
+                <div class="bg-[#0f0f0f] relative">
+                    <a href="#" class="block overflow-hidden">
+                        <img width="434" height="302" src="assets/images/inspiration1.webp" srcset="assets/images/inspiration1@2x.webp 2x" alt="inspiration" class="max-h-[304px] w-full transition-all duration-200 ease-linear hover:scale-105">
+                    </a>
+                    <div class="pt-8 pb-8 ps-10 pe-8">
+                        <a href="#" class="text-[27px] text-white font-normal text-center transition-all duration-200 ease-linear hover:text-primary">
+                            <h3 class="">IDEA: 10 RECIPES FOR COOKING</h3>
+                        </a>
+                        <div class="flex mt-0 items-center gap-5 justify-center">
+                            <p class="text-[#9b9b9b] text-sm font-medium">Post by John Doe</p>
+                            <a href="#" aria-label="post comments">
+                                <i class="fa-light fa-message text-white text-lg"></i>
+                            </a>
+                            <a href="#" aria-label="share post">
+                                <i class="fa-sharp fa-light fa-share-nodes text-white text-lg"></i>
+                            </a>
+                        </div>
+                        <p class="mt-4 text-sm text-white font-medium text-center leading-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. 
+                        </p>
+                        <a href="#" class="text-primary text-sm font-medium mt-7 text-center block transition-all duration-200 ease-linear hover:text-white">CONTINUE READING</a>
+                    </div>
+                    <div class="absolute top-4 left-5 bg-[#0f0f0f] px-4 py-3">
+                        <span class="text-3xl text-white font-semibold block leading-none text-center">5</span>
+                        <span class="text-white text-sm font-normal leading-none block -mt-[2px]">JUN</span>
+                    </div> 
+                </div>
+                <div class="bg-[#0f0f0f] relative">
+                    <a href="#" class="block overflow-hidden">
+                        <img width="434" height="302" src="assets/images/inspiration2.webp" srcset="assets/images/inspiration2@2x.webp 2x" alt="inspiration" class="max-h-[304px] w-full transition-all duration-200 ease-linear hover:scale-105">
+                    </a>
+                    <div class="pt-8 pb-8 ps-10 pe-8">
+                        <a href="#" class="text-[27px] text-white font-normal text-center transition-all duration-200 ease-linear hover:text-primary">
+                            <h3 class="">IDEA: 10 RECIPES FOR COOKING</h3>
+                        </a>
+                        <div class="flex mt-0 items-center gap-5 justify-center">
+                            <p class="text-[#9b9b9b] text-sm font-medium">Post by John Doe</p>
+                            <a href="#" aria-label="post comments">
+                                <i class="fa-light fa-message text-white text-lg"></i>
+                            </a>
+                            <a href="#" aria-label="share post">
+                                <i class="fa-sharp fa-light fa-share-nodes text-white text-lg"></i>
+                            </a>
+                        </div>
+                        <p class="mt-4 text-sm text-white font-medium text-center leading-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. 
+                        </p>
+                        <a href="#" class="text-primary text-sm font-medium mt-7 text-center block transition-all duration-200 ease-linear hover:text-white">CONTINUE READING</a>
+                    </div>
+                    <div class="absolute top-4 left-5 bg-[#0f0f0f] px-4 py-3">
+                        <span class="text-3xl text-white font-semibold block leading-none text-center">5</span>
+                        <span class="text-white text-sm font-normal leading-none block -mt-[2px]">JUN</span>
+                    </div> 
+                </div>
+                <div class="bg-[#0f0f0f] relative">
+                    <a href="#" class="block overflow-hidden">
+                        <img width="434" height="302" src="assets/images/inspiration3.webp" srcset="assets/images/inspiration3@2x.webp 2x" alt="inspiration" class="max-h-[304px] w-full transition-all duration-200 ease-linear hover:scale-105">
+                    </a>
+                    <div class="pt-8 pb-8 ps-10 pe-8">
+                        <a href="#" class="text-[27px] text-white font-normal text-center transition-all duration-200 ease-linear hover:text-primary">
+                            <h3 class="">IDEA: 10 RECIPES FOR COOKING</h3>
+                        </a>
+                        <div class="flex mt-0 items-center gap-5 justify-center">
+                            <p class="text-[#9b9b9b] text-sm font-medium">Post by John Doe</p>
+                            <a href="#" aria-label="post comments">
+                                <i class="fa-light fa-message text-white text-lg"></i>
+                            </a>
+                            <a href="#" aria-label="share post">
+                                <i class="fa-sharp fa-light fa-share-nodes text-white text-lg"></i>
+                            </a>
+                        </div>
+                        <p class="mt-4 text-sm text-white font-medium text-center leading-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. 
+                        </p>
+                        <a href="#" class="text-primary text-sm font-medium mt-7 text-center block transition-all duration-200 ease-linear hover:text-white">CONTINUE READING</a>
+                    </div>
+                    <div class="absolute top-4 left-5 bg-[#0f0f0f] px-4 py-3">
+                        <span class="text-3xl text-white font-semibold block leading-none text-center">5</span>
+                        <span class="text-white text-sm font-normal leading-none block -mt-[2px]">JUN</span>
+                    </div> 
+                </div>
+
+                
+            </div>
+        </div>
+      </section>
+      <!-- End Latest News -->
+
+      <!-- Footer -->
+      <footer>
+        <div class=" bg-[#0f0f0f] pt-[38px] pb-12">
+           <div class="container">
+              <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-10">
+                  <div class="w-full md:w-96">
+                    <a href="#">
+                        <img width="229" height="176" src="assets/images/GCC-gold.webp" srcset="assets/images/GCC-gold.webp 2x" alt="GCC">
+                    </a>
+                    <p class="text-white mt-12 leading-7">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                    <div class="md:mt-8 mt-4">
+                        <div class="flex items-center justify-start gap-4">
+                            <i class="fa-sharp fa-solid fa-location-arrow text-2xl text-primary"></i> <a href="#" class="text-base text-white leading-tight inline-block hover:text-primary">123 Lorem Street, Germany</a>
+                        </div>
+                        <div class="mt-2 flex items-center justify-start gap-4">
+                            <i class="fa-regular fa-mobile-notch text-2xl text-primary"></i> <a href="#" class="text-base text-white leading-tight inline-block hover:text-primary">Phone: (012) 3456-7890</a> 
+                        </div>
+                        <div class="mt-2 flex items-center justify-start gap-4">
+                            <i class="fa-regular fa-envelope text-2xl text-primary"></i> <a href="#" class="text-base text-white leading-tight inline-block hover:text-primary">Fax: (0123) 34</a> 
+                        </div>
+                    </div>
+                  </div>
+                  <div class="flex md:items-center justify-start flex-col">
+                    <div>
+                        <h3 class="text-[30px] font-bold text-white leading-none text-left">SERVICE</h3>
+                        <ul class="flex flex-col text-white text-base font-normal mt-5 gap-3">
+                            <li><a href="#" class="hover:text-primary transition-all">FAQ </a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Order</a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Delivery</a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Shipping</a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Payment Methods</a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Recipes & Videos</a></li>
+                        </ul>
+                    </div>
+                  </div>
+
+                  <div class="flex lg:items-center justify-start flex-col">
+                    <div>
+                        <h3 class="text-[30px] font-bold text-white leading-none text-left">INFO</h3>
+                        <ul class="flex flex-col text-white text-base font-normal mt-5 gap-3">
+                            <li><a href="#" class="hover:text-primary transition-all">Contact </a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Data Protection </a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Right of Withdrawal </a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Conditions</a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Imprint</a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Cookies</a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">Jobs</a></li>
+                            <li><a href="#" class="hover:text-primary transition-all">We are the Meat Rebels</a></li>
+                        </ul>
+                    </div>
+                  </div>
+
+                  <div class="flex lg:items-center justify-start flex-col">
+                    <div>
+                        <h3 class="text-[30px] font-bold text-white leading-none text-left">PAYMENT METHOD</h3>
+                    </div>
+                    <div class="md:mt-10 mt-6 flex items-center gap-2">
+                        <a href="#">
+                            <img width="64" height="40" src="assets/images/paypal.webp" alt="Cards" class="max-h-[52px] object-contain">
+                        </a>
+                        <a href="#">
+                            <img width="64" height="40" src="assets/images/visa.webp" alt="Cards" class="max-h-[52px] object-contain">
+                        </a>
+                        <a href="#">
+                            <img width="64" height="40" src="assets/images/matercard.webp" alt="Cards" class="max-h-[52px] object-contain">
+                        </a>
+                        <a href="#">
+                            <img width="64" height="40" src="assets/images/american-express.webp" alt="Cards" class="max-h-[52px] object-contain">
+                        </a>
+                    </div>
+                    <h3 class="text-[30px] font-bold text-white leading-none text-start md:mt-12 mt-6 w-full">FOLLOW US</h3>
+                    <div class="flex items-center gap-3 lg:gap-4 xl:gap-8 text-3xl xl:text-4xl mt-6 w-full">
+                        <a href="#" aria-label="facebook">
+                            <i class="fa-brands fa-facebook-f text-primary hover:text-white transition-all"></i>
+                        </a>
+                        <a href="#" aria-label="instagram">
+                             <i class="fa-brands fa-instagram text-primary hover:text-white transition-all"></i>
+                        </a>
+                        <a href="#" aria-label="youtube">
+                            <i class="fa-brands fa-youtube text-primary  hover:text-white transition-all"></i>
+                        </a>
+                        <a href="#" aria-label="pinterest">
+                            <i class="fa-brands fa-pinterest text-primary hover:text-white transition-all"></i>
+                        </a>
+                     </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="bg-secondary pt-[26px] pb-[20px]">
+            <p class="text-center text-white text-sm font-normal leading-none px-4">GOURMET CUT CLUB © 2023 PREMIUM MEAT-SELLING WEBSHOP</p>
+        </div>
+     </footer>
+     <!-- End Footer -->
+
+     <!-- Shopping-Cart -->
+     <div class="shopping-cart bg-[#0f0f0f] pt-14 pb-12">
+        <div class="close m-0 p-0 text-white text-4xl px-3 py-2 absolute top-2 right-3">
+            <i class="fa-light fa-xmark"></i>
+        </div>
+        <div class="container">
+            <div class="text-white text-3xl font-bold leading-tight">Shopping Cart</div>
+        </div>
+        <div class="pb-7 border-b-[3px] border-solid border-primary"></div>
+        <div class="flex flex-col justify-between h-full gap-10">
+            <div class="container">
+                <ul class="mt-8 flex flex-col gap-4">
+                    <li class="flex items-start gap-3 pb-5 border-b-[2px] border-[#383838]">
+                        <a href="#" class="max-w-[35%]">
+                            <img width="257" height="171" src="assets/images/featured-product-1.webp" srcset="assets/images/featured-product-1@2x.webp 2x" alt="Shopping Item">
+                        </a>
+                        <div class="flex flex-col gap-0 max-w-[55%]">
+                            <a href="#" class="text-sm font-semibold leading-snug text-white">Sirloin Steak, Creekstone  Farms USA </a>
+                            <p class="text-xs text-[#999999] leading-normal mb-0"><strong>Content:</strong> 4000 g</p>
+                            <p class="text-xs text-[#999999] leading-normal"> 4 x <span class="text-primary font-semibold"> 99.00 €</span> (99.00 € / 1 kg)</p>
+                        </div>
+                        <button class="m-0 p-0 text-white text-lg px-3 pb-2 -mt-1" aria-label="close">
+                            <i class="fa-light fa-xmark"></i>
+                        </button>
+                    </li>
+                    <li class="flex items-start gap-3 pb-5 border-b-[2px] border-[#383838]">
+                        <a href="#" class="max-w-[35%]">
+                            <img width="257" height="171" src="assets/images/featured-product-2.webp" srcset="assets/images/featured-product-2@2x.webp 2x" alt="Shopping Item">
+                        </a>
+                        <div class="flex flex-col gap-0 max-w-[55%]">
+                            <a href="#" class="text-sm font-semibold leading-snug text-white">Sirloin Steak, Creekstone  Farms USA </a>
+                            <p class="text-xs text-[#999999] leading-normal mb-0"><strong>Content:</strong> 4000 g</p>
+                            <p class="text-xs text-[#999999] leading-normal"> 4 x <span class="text-primary font-semibold"> 99.00 €</span> (99.00 € / 1 kg)</p>
+                        </div>
+                        <button class="m-0 p-0 text-white text-lg px-3 pb-2 -mt-1" aria-label="close">
+                            <i class="fa-light fa-xmark"></i>
+                        </button>
+                    </li>
+                    <li class="flex items-start gap-3 pb-5 border-b-[2px] border-[#383838]">
+                        <a href="#" class="max-w-[35%]">
+                            <img width="257" height="171" src="assets/images/featured-product-3.webp" srcset="assets/images/featured-product-3@2x.webp 2x" alt="Shopping Item">
+                        </a>
+                        <div class="flex flex-col gap-0 max-w-[55%]">
+                            <a href="#" class="text-sm font-semibold leading-snug text-white">Sirloin Steak, Creekstone  Farms USA </a>
+                            <p class="text-xs text-[#999999] leading-normal mb-0"><strong>Content:</strong> 4000 g</p>
+                            <p class="text-xs text-[#999999] leading-normal"> 4 x <span class="text-primary font-semibold"> 99.00 €</span> (99.00 € / 1 kg)</p>
+                        </div>
+                        <button class="m-0 p-0 text-white text-lg px-3 pb-2 -mt-1" aria-label="close">
+                            <i class="fa-light fa-xmark"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="border-t-[2px] border-b-[2px] border-solid border-primary py-6">
+                    <div class="container">
+                        <div class="flex items-center justify-between">
+                            <div class="text-white text-2xl font-bold leading-none">Subtotal:</div>
+                            <p class="text-primary text-[26px] font-medium leading-none">690.00 €</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container pt-7 pb-5">
+                    <a href="#" class="text-xl font-semibold text-white block bg-[#1a1a1a] py-4 px-10 text-center leading-none transition-all hover:bg-primary">VIEW CART</a>
+                    <a href="#" class="text-xl font-semibold text-white block bg-primary py-4 px-10 text-center leading-none transition-all hover:bg-[#1a1a1a]primary mt-5">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Shopping-Cart -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/slick.min.js"></script>
+      <script>
+        jQuery(document).ready(function($) {
+      $('.banner-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+            });
+
+
+            $(".have-sub-menu.categories").click(function(){
+                 $(this).toggleClass("active");
+            });
+
+            $(".shopping-btn").click(function(){
+                 $("body").toggleClass("cart-active");
+            });
+
+            $(".shopping-cart .close").click(function(){
+                 $("body").removeClass("cart-active");
+            });
+
+        });
+      </script>
+
+
+ 
+   </body>
+</html>
