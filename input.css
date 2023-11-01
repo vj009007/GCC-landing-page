@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
 @layer base {
   .container {
     @apply xl:max-w-[1364px] !important;
@@ -57,13 +55,13 @@
     @apply bg-transparent;
   }
 
-  .banner-slider .slick-dots {
+  .slick-dots {
     @apply hidden md:flex flex-row items-center justify-center list-none gap-4 mt-10 absolute md:relative opacity-0 md:opacity-100;
   }
-  .banner-slider .slick-dots button {
+  .slick-dots button {
     @apply text-[0px] p-[6px] rounded-full border-white border-[3px] border-solid bg-transparent;
   }
-  .banner-slider .slick-dots .slick-active button {
+  .slick-dots .slick-active button {
     @apply bg-white;
   }
   .navTabs a {
@@ -136,19 +134,19 @@
     @apply text-white md:text-base lg:text-xl xl:text-2xl font-bold py-1 pl-6 pr-[52px] border-2 border-[#414141] border-t-0 flex items-center bg-transparent whitespace-nowrap  md:min-h-[42px] lg:min-h-[62px];
   }
 
-  .menu li.categories > .sub-menu > li > a {
+  .categories > .sub-menu > li > a {
     @apply pl-2 lg:pl-6;
   }
 
-  .menu .sub-menu li a i {
+  .sub-menu i {
     @apply absolute right-6 pl-7;
   }
 
-  .menu .sub-menu li a img {
+  .sub-menu img {
     @apply mr-4 w-7 lg:w-auto;
   }
 
-  .menu .sub-menu li a:hover {
+  .sub-menu li a:hover {
     @apply bg-primary;
   }
 
@@ -162,23 +160,10 @@
     @apply visible opacity-100;
   }
 
-  .menu > li > ul.sub-menu > li:first-child:hover > .sub-menu {
-  }
 
   /* Mobile Nav */
   header.active .humburger {
     @apply relative transition-all duration-300 ease-linear;
-  }
-
-  header.active .humburger span:nth-child(2) {
-    @apply opacity-0;
-  }
-
-  header.active .humburger span:nth-child(1) {
-    @apply rotate-45 relative top-[13px];
-  }
-  header.active .humburger span:nth-child(3) {
-    @apply -rotate-45 relative -top-[13px];
   }
 
   
