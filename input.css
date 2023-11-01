@@ -176,4 +176,11 @@
   body.cart-active .shopping-cart {
     @apply left-0;
   }
+
+
+  /******  New CSS *******/
+  .banner-slider-wrapper{
+    background-image:url('/assets/images/black-wood.webp');
+    @apply bg-no-repeat bg-cover;
+  }
 }
