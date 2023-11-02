@@ -176,62 +176,54 @@
     background-image: url("/assets/images/black-wood.webp");
     @apply bg-no-repeat bg-cover;
   }
-  /****** Mobile Slider Dots *******/
+
+
+  /* Mobile Product Slider  */
   .mobileSlider ul.slick-dots {
-      @apply flex items-center justify-center w-full absolute -bottom-14 opacity-100 m-0 !important;
+    @apply flex items-center justify-center w-full absolute -bottom-14 opacity-100 m-0 !important;
   }
   .mobileSlider .slick-dots button{
-    @apply border-2 p-1 !important
+    @apply border-2 p-1 !important;
   }
 
-}
-
-
-
-.page-header .menu-wrapper {
-  @apply absolute top-0 left-0 right-0 h[100vh] overflow-hidden bg-[#ff0000] z-10 translate-x-[100%] transition-transform duration-500
-  backface-visibility: hidden; 
-}
-
-.page-header .menu-wrapper.is-visible {
- @apply transform-none
-}
-
-.page-header .list-wrapper {
-  @apply h-full overflow-x-auto bg-black
-}
-
-.page-header .list-wrapper:nth-child(2),
-.page-header .list-wrapper:nth-child(3),
-.page-header .list-wrapper:nth-child(4) {
-  @apply absolute top-0 left-0 right-0 translate-x-[-100%] transition-transform duration-500;
-  backface-visibility: hidden;
-}
-
-.page-header .list-wrapper:nth-child(2).is-visible,
-.page-header .list-wrapper:nth-child(3).is-visible,
-.page-header .list-wrapper:nth-child(4).is-visible {
-  @apply transform-none
-}
-
-.page-header .list-wrapper:nth-child(1) > ul > li > .sub-menu,
-.page-header .list-wrapper:nth-child(2) .level-3,
-.page-header .list-wrapper:nth-child(3) .level-4 {
- @apply hidden
-}
-
-.page-header .menu-wrapper a {
-  @apply text-white text-base font-normal py-3 px-6 border border-[#414141] border-t-0 border-x-0 whitespace-nowrap block w-full;
+  /* Mobile Menu */
+  .menu-wrapper {
+    @apply fixed pt-10 top-0 left-0 right-0 h-[100vh] overflow-hidden bg-[#000c] z-20 -translate-x-[100%] transition-transform duration-500;
+    backface-visibility: hidden; 
+    }
+    
+    .menu-wrapper.is-visible {
+    @apply transform-none
+    }
+    
+    .list-wrapper {
+    @apply  overflow-x-auto bg-black
+    }
+    
+    .page-header .list-wrapper {
+    @apply absolute top-0 left-0 right-10 translate-x-[-100%] transition-transform duration-500;
+    backface-visibility: hidden;
+    }
+    
+    .page-header .list-wrapper.is-visible {
+    @apply transform-none
+    }
+    
+    .page-header .list-wrapper:nth-child(1) > ul > li > .sub-menu,
+    .page-header .list-wrapper:nth-child(2) .level-3,
+    .page-header .list-wrapper:nth-child(3) .level-4 {
+    @apply hidden
+    }
   
+
+    .menu-wrapper a {
+    @apply text-white text-base font-normal py-3 px-6 border border-[#414141] border-t-0 border-x-0 whitespace-nowrap block w-full;
+    
+    }
+    
+    .back-one-level {
+    @apply text-white text-base;
+    }
+    
+    
 }
-
-.page-header .menu-wrapper a:hover,
-.page-header .menu-wrapper a.is-active {
-
-}
-
-
-.page-header .back-one-level {
-  @apply text-white text-base;
-}
-
