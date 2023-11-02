@@ -187,13 +187,22 @@
   }
 
   /* Mobile Menu */
-  .menu-wrapper {
-    @apply fixed pt-10 top-0 left-0 right-0 h-[100vh] overflow-hidden bg-[#000c] z-20 -translate-x-[100%] transition-transform duration-500;
+  .mobile-nav {
+    @apply fixed pt-10 top-0 left-0 right-0 h-[100vh] overflow-hidden bg-[red] z-20 -translate-x-[100%] transition-transform duration-500;
     backface-visibility: hidden; 
     }
     
-    .menu-wrapper.is-visible {
+    .mobile-nav.is-visible {
     @apply transform-none
+    }
+
+    .menu-wrapper{
+      position: relative;
+      top: 0px;
+      left: 0;
+      right: 0;
+      height: 60vh;
+      border: solid 1px blue;
     }
     
     .list-wrapper {
@@ -201,7 +210,7 @@
     }
     
     .page-header .list-wrapper {
-    @apply absolute top-0 left-0 right-10 translate-x-[-100%] transition-transform duration-500;
+    @apply absolute top-0 left-0 right-0 translate-x-[-100%] transition-transform duration-500;
     backface-visibility: hidden;
     }
     
