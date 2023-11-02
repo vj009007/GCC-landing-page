@@ -1107,9 +1107,15 @@ body.cart-active .shopping-cart {
 }
 
 .banner-slider-wrapper {
-  background-image: url("/assets/images/black-wood.webp");
+  background-image: url('/assets/images/black-wood.webp');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .banner-slider-wrapper {
+    background-image: url('/assets/images/black-wood.webp');
+  }
 }
 
 /* Mobile Product Slider  */
@@ -1156,7 +1162,7 @@ body.cart-active .shopping-cart {
 }
 
 .menu-wrapper{
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0;
   right: 0;
