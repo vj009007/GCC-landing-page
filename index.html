@@ -323,13 +323,6 @@
          </div>
 
 
-
-         
-
-
-
-
-
       </header>
       <!-- End Header -->
 
@@ -645,9 +638,9 @@
 
       <!-- Products -->
       <section class="bg-secondary md:pt-[52px] pt-10 md:pb-16 pb-10">
-            <div class="xl:max-w-[1508px] bg-no-repeat bg-cover lg:py-16 py-10 lg:px-20 md:px-10 px-4 mx-auto" style="background-image:url('/assets/images/wood-bg.webp')">
+            <div class="xl:max-w-[1508px] bg-no-repeat bg-cover lg:py-16 py-10 lg:px-20 md:px-10 px-4 pb-20 mx-auto" style="background-image:url('/assets/images/wood-bg.webp')">
                 <h2 class="md:text-[40px] text-3xl font-semibold uppercase leading-tight text-white  text-center">FEATURED PRODUCTS</h2>
-                <div class="grid md:mt-16 mt-10 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 rowGap">
+                <div class="grid md:mt-16 mt-10 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 rowGap relative mobileSlider">
 
                     <!-- Product Col -->
                     <div class="bg-[#0f0f0f] relative">
@@ -1368,93 +1361,109 @@
             }
         };
 
-     
+        const pageHeader = document.querySelector(".page-header");
+        const toggleMenu = pageHeader.querySelector(".toggle-menu");
+        const menuWrapper = pageHeader.querySelector(".menu-wrapper");
+        const level1Links = pageHeader.querySelectorAll(".level-1 > li > a");
+        const listWrapper2 = pageHeader.querySelector(".list-wrapper:nth-child(2)");
+        const listWrapper3 = pageHeader.querySelector(".list-wrapper:nth-child(3)");
+        const listWrapper4 = pageHeader.querySelector(".list-wrapper:nth-child(4)");
+        const subMenuWrapper2 = listWrapper2.querySelector(".sub-menu-wrapper");
+        const subMenuWrapper3 = listWrapper3.querySelector(".sub-menu-wrapper");
+        const subMenuWrapper4 = listWrapper4.querySelector(".sub-menu-wrapper");
+        const backOneLevelBtns = pageHeader.querySelectorAll(".back-one-level");
+        const isVisibleClass = "is-visible";
+        const isActiveClass = "is-active";
 
+        toggleMenu.addEventListener("click", function () {
+        menuWrapper.classList.toggle(isVisibleClass);
+        if (!this.classList.contains(isVisibleClass)) {
+            listWrapper2.classList.remove(isVisibleClass);
+            listWrapper3.classList.remove(isVisibleClass);
+            const menuLinks = menuWrapper.querySelectorAll("a");
+            for (const menuLink of menuLinks) {
+            menuLink.classList.remove(isActiveClass);
+            }
+        }
+        });
 
-const pageHeader = document.querySelector(".page-header");
-const toggleMenu = pageHeader.querySelector(".toggle-menu");
-const menuWrapper = pageHeader.querySelector(".menu-wrapper");
-const level1Links = pageHeader.querySelectorAll(".level-1 > li > a");
-const listWrapper2 = pageHeader.querySelector(".list-wrapper:nth-child(2)");
-const listWrapper3 = pageHeader.querySelector(".list-wrapper:nth-child(3)");
-const listWrapper4 = pageHeader.querySelector(".list-wrapper:nth-child(4)");
-const subMenuWrapper2 = listWrapper2.querySelector(".sub-menu-wrapper");
-const subMenuWrapper3 = listWrapper3.querySelector(".sub-menu-wrapper");
-const subMenuWrapper4 = listWrapper4.querySelector(".sub-menu-wrapper");
-const backOneLevelBtns = pageHeader.querySelectorAll(".back-one-level");
-const isVisibleClass = "is-visible";
-const isActiveClass = "is-active";
+        for (const level1Link of level1Links) {
+        level1Link.addEventListener("click", function (e) {
+            const siblingList = level1Link.nextElementSibling;
+            if (siblingList) {
+            e.preventDefault();
+            this.classList.add(isActiveClass);
+            const cloneSiblingList = siblingList.cloneNode(true);
+            subMenuWrapper2.innerHTML = "";
+            subMenuWrapper2.append(cloneSiblingList);
+            listWrapper2.classList.add(isVisibleClass);
+            }
+        });
+        }
 
-toggleMenu.addEventListener("click", function () {
-  menuWrapper.classList.toggle(isVisibleClass);
-  if (!this.classList.contains(isVisibleClass)) {
-    listWrapper2.classList.remove(isVisibleClass);
-    listWrapper3.classList.remove(isVisibleClass);
-    const menuLinks = menuWrapper.querySelectorAll("a");
-    for (const menuLink of menuLinks) {
-      menuLink.classList.remove(isActiveClass);
-    }
-  }
-});
+        listWrapper2.addEventListener("click", function (e) {
+        const target = e.target;
+        if (target.tagName.toLowerCase() === "a" && target.nextElementSibling) {
+            const siblingList = target.nextElementSibling;
+            e.preventDefault();
+            target.classList.add(isActiveClass);
+            const cloneSiblingList = siblingList.cloneNode(true);
+            subMenuWrapper3.innerHTML = "";
+            subMenuWrapper3.append(cloneSiblingList);
+            listWrapper3.classList.add(isVisibleClass);
+        }
+        });
 
-for (const level1Link of level1Links) {
-  level1Link.addEventListener("click", function (e) {
-    const siblingList = level1Link.nextElementSibling;
-    if (siblingList) {
-      e.preventDefault();
-      this.classList.add(isActiveClass);
-      const cloneSiblingList = siblingList.cloneNode(true);
-      subMenuWrapper2.innerHTML = "";
-      subMenuWrapper2.append(cloneSiblingList);
-      listWrapper2.classList.add(isVisibleClass);
-    }
-  });
-}
+        listWrapper3.addEventListener("click", function (e) {
+        const target = e.target;
+        if (target.tagName.toLowerCase() === "a" && target.nextElementSibling) {
+            const siblingList = target.nextElementSibling;
+            e.preventDefault();
+            target.classList.add(isActiveClass);
+            const cloneSiblingList = siblingList.cloneNode(true);
+            subMenuWrapper4.innerHTML = "";
+            subMenuWrapper4.append(cloneSiblingList);
+            listWrapper4.classList.add(isVisibleClass);
+        }
+        });
 
-listWrapper2.addEventListener("click", function (e) {
-  const target = e.target;
-  if (target.tagName.toLowerCase() === "a" && target.nextElementSibling) {
-    const siblingList = target.nextElementSibling;
-    e.preventDefault();
-    target.classList.add(isActiveClass);
-    const cloneSiblingList = siblingList.cloneNode(true);
-    subMenuWrapper3.innerHTML = "";
-    subMenuWrapper3.append(cloneSiblingList);
-    listWrapper3.classList.add(isVisibleClass);
-  }
-});
+        for (const backOneLevelBtn of backOneLevelBtns) {
+        backOneLevelBtn.addEventListener("click", function () {
+            const parent = this.closest(".list-wrapper");
+            parent.classList.remove(isVisibleClass);
+            parent.previousElementSibling
+            .querySelector(".is-active")
+            .classList.remove(isActiveClass);
+        });
+        }
+// Mobile Only Slider 
+    mobileOnlySlider(".mobileSlider", true, false, 640);
+    function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+        var slider = $($slidername);
+        var settings = {
+            mobileFirst: true,
+            dots: $dots,
+            arrows: $arrows,
+            responsive: [
+                {
+                    breakpoint: $breakpoint,
+                    settings: "unslick"
+                }
+            ]
+        };
 
-listWrapper3.addEventListener("click", function (e) {
-  const target = e.target;
-  if (target.tagName.toLowerCase() === "a" && target.nextElementSibling) {
-    const siblingList = target.nextElementSibling;
-    e.preventDefault();
-    target.classList.add(isActiveClass);
-    const cloneSiblingList = siblingList.cloneNode(true);
-    subMenuWrapper4.innerHTML = "";
-    subMenuWrapper4.append(cloneSiblingList);
-    listWrapper4.classList.add(isVisibleClass);
-  }
-});
+        slider.slick(settings);
 
-for (const backOneLevelBtn of backOneLevelBtns) {
-  backOneLevelBtn.addEventListener("click", function () {
-    const parent = this.closest(".list-wrapper");
-    parent.classList.remove(isVisibleClass);
-    parent.previousElementSibling
-      .querySelector(".is-active")
-      .classList.remove(isActiveClass);
-  });
-}
-
-
-
-
-
-
-
-
-
+        $(window).on("resize", function () {
+            if ($(window).width() > $breakpoint) {
+                return;
+            }
+            if (!slider.hasClass("slick-initialized")) {
+                return slider.slick(settings);
+            }
+        });
+    } 
+// Mobile Only Slider
 
       </script>
 

@@ -176,6 +176,13 @@
     background-image: url("/assets/images/black-wood.webp");
     @apply bg-no-repeat bg-cover;
   }
+  /****** Mobile Slider Dots *******/
+  .mobileSlider ul.slick-dots {
+      @apply flex items-center justify-center w-full absolute -bottom-14 opacity-100 m-0 !important;
+  }
+  .mobileSlider .slick-dots button{
+    @apply border-2 p-1 !important
+  }
 
 }
 
