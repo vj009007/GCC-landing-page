@@ -1040,7 +1040,7 @@ body {
 
 @media (min-width: 1024px) {
   .sub-menu img {
-    width: auto;
+    width: 43px;
   }
 }
 
@@ -1116,6 +1116,10 @@ body.cart-active .shopping-cart {
   .banner-slider-wrapper {
     background-image: url('/assets/images/black-wood.webp');
   }
+}
+
+.banner-slider > .slider-item {
+  display: none !important;
 }
 
 /* Mobile Product Slider  */
@@ -1584,6 +1588,15 @@ body.cart-active .shopping-cart {
 
 .max-h-\[70px\] {
   max-height: 70px;
+}
+
+.min-h-\[175px\] {
+  min-height: 175px;
+}
+
+.min-h-min {
+  min-height: -moz-min-content;
+  min-height: min-content;
 }
 
 .w-10 {
