@@ -189,51 +189,35 @@
 
 
 .page-header .menu-wrapper {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  right:0;
-  height: 100vh;
-  overflow: hidden;
-  background: red;
-  z-index: 11;
-  transform: translateX(-100%);
-  backface-visibility: hidden;
-  transition: transform 0.5s; 
+  @apply absolute top-0 left-0 right-0 h[100vh] overflow-hidden bg-[#ff0000] z-10 translate-x-[100%] transition-transform duration-500
+  backface-visibility: hidden; 
 }
 
 .page-header .menu-wrapper.is-visible {
-  transform: none;
+ @apply transform-none
 }
 
 .page-header .list-wrapper {
-  height: 100%;
-  overflow-y: auto;
-  background: #000;
+  @apply h-full overflow-x-auto bg-black
 }
 
 .page-header .list-wrapper:nth-child(2),
 .page-header .list-wrapper:nth-child(3),
 .page-header .list-wrapper:nth-child(4) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  transform: translateX(-100%);
+  @apply absolute top-0 left-0 right-0 translate-x-[-100%] transition-transform duration-500;
   backface-visibility: hidden;
-  transition: transform 0.5s;
 }
 
 .page-header .list-wrapper:nth-child(2).is-visible,
 .page-header .list-wrapper:nth-child(3).is-visible,
 .page-header .list-wrapper:nth-child(4).is-visible {
-  transform: none;
+  @apply transform-none
 }
 
 .page-header .list-wrapper:nth-child(1) > ul > li > .sub-menu,
 .page-header .list-wrapper:nth-child(2) .level-3,
 .page-header .list-wrapper:nth-child(3) .level-4 {
-  display: none;
+ @apply hidden
 }
 
 .page-header .menu-wrapper a {
