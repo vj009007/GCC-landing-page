@@ -81,8 +81,9 @@
         }
     });
 
-
-
+    setTimeout(function() {
+        $('.mobileSlider > div').attr('aria-hidden', false);
+      }, 100);
 
 });
 
