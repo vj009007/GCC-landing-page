@@ -175,6 +175,14 @@
   .banner-slider-wrapper {
     @apply bg-[url('/assets/images/black-wood-mobile.webp')] md:bg-[url('/assets/images/black-wood.webp')]  bg-no-repeat bg-cover;
   }
+  
+  .banner-slider > .slider-item{
+    @apply hidden !important;
+  }
+    
+  .banner-slider > .slider-item:first-child{
+    @apply flex !important;
+  }
 
 
   /* Mobile Product Slider  */
