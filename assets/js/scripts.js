@@ -21,7 +21,13 @@
         });
 
         $(".close-menu").click(function(){
-            $(".menu-wrapper").toggleClass("is-visible");
+            $(".mobile-nav").removeClass("is-visible");
+            $(".menu-wrapper").removeClass("is-visible");
+            $(".list-wrapper").removeClass("is-visible");
+        });
+
+        $(".toggle-menu").click(function(){
+            $(".mobile-nav").addClass("is-visible");
         });
 
         $(".toggle-menu").click(function(){
@@ -122,6 +128,7 @@ const backOneLevelBtns = pageHeader.querySelectorAll(".back-one-level");
 const isVisibleClass = "is-visible";
 const isActiveClass = "is-active";
 
+/*
 toggleMenu.addEventListener("click", function () {
 menuWrapper.classList.toggle(isVisibleClass);
 if (!this.classList.contains(isVisibleClass)) {
@@ -132,7 +139,7 @@ if (!this.classList.contains(isVisibleClass)) {
     menuLink.classList.remove(isActiveClass);
     }
 }
-});
+});*/
 
 for (const level1Link of level1Links) {
 level1Link.addEventListener("click", function (e) {
