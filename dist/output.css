@@ -1118,10 +1118,6 @@ body.cart-active .shopping-cart {
   }
 }
 
-.banner-slider > .slider-item {
-  display: none !important;
-}
-
 /* Mobile Product Slider  */
 
 .mobileSlider ul.slick-dots {
@@ -1148,15 +1144,16 @@ body.cart-active .shopping-cart {
   left: 0px;
   right: 0px;
   z-index: 20;
-  min-height: 100vh;
+  height: 100vh;
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  overflow: hidden;
+  overflow: auto;
   --tw-bg-opacity: 1;
   background-color: rgb(15 15 15 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
   padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
@@ -1207,7 +1204,6 @@ body.cart-active .shopping-cart {
   white-space: nowrap;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1216,11 +1212,8 @@ body.cart-active .shopping-cart {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.back-one-level {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.menu-wrapper a:hover {
+  background-color: transparent !important;
 }
 
 .menu-wrapper a.nested {
@@ -1233,7 +1226,7 @@ body.cart-active .shopping-cart {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.page-header .list-wrapper li a:before {
+.menu-wrapper ul li:has(ul) a:before {
   position: absolute;
   right: 0px;
   display: block;
@@ -1244,6 +1237,10 @@ body.cart-active .shopping-cart {
   --tw-content: "\f105";
   content: var(--tw-content);
   font-family: 'Font Awesome 6 Pro';
+}
+
+header:has(.is-visible.first-item) .back-one-level {
+  display: none;
 }
 
 .sr-only {
@@ -2903,11 +2900,6 @@ body.cart-active .shopping-cart {
   padding-right: 1rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -3024,12 +3016,20 @@ body.cart-active .shopping-cart {
   padding-right: 2.5rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .ps-10 {
   padding-inline-start: 2.5rem;
 }
 
 .ps-2 {
   padding-inline-start: 0.5rem;
+}
+
+.ps-4 {
+  padding-inline-start: 1rem;
 }
 
 .pt-0 {

@@ -75,18 +75,11 @@
 
       $(document).on('click', '.back-one-level', function() {
         var $this = $(".list-wrapper.is-visible");
-        if ($this.hasClass('first-item')) {
-            
-            $(".mobile-nav").removeClass("is-visible");
-            $(".menu-wrapper").removeClass("is-visible");
-            $(".list-wrapper").removeClass("is-visible");
-        }else{
+        if ($this.hasClass('is-visible')) {
             $this.prev(".list-wrapper").addClass("is-visible");
             $this.removeClass("is-visible");
-
         }
     });
-
 
 
 

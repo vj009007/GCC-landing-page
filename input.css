@@ -187,7 +187,7 @@
 
   /* Mobile Menu */
   .mobile-nav {
-    @apply fixed pt-10 top-0 px-4 left-0 right-0 min-h-[100vh] overflow-hidden bg-[#0f0f0f] z-20 -translate-x-[100%] transition-transform duration-500;
+    @apply fixed py-10 overflow-auto top-0 px-6 left-0 right-0 h-[100vh] bg-[#0f0f0f] z-20 -translate-x-[100%] transition-transform duration-500;
     backface-visibility: hidden;
   }
 
@@ -219,14 +219,23 @@
   }
 
   .menu-wrapper a {
-    @apply text-white text-base font-normal py-3 px-6 whitespace-nowrap block w-full;
+    @apply text-white text-base font-normal py-3 pr-6 whitespace-nowrap block w-full;
+  }
+
+  .menu-wrapper a:hover{
+    @apply bg-transparent !important;
   }
 
   .menu-wrapper a.nested{
     @apply text-2xl font-semibold text-white leading-none relative
   }
-  .page-header .list-wrapper li a:before{
+  .menu-wrapper ul li:has(ul) a:before{
     @apply content-["\f105"] block absolute right-0 w-4 h-3 text-lg;
     font-family: 'Font Awesome 6 Pro';
   }
+
+  header:has(.is-visible.first-item) .back-one-level{
+    @apply hidden
+  }
+
 }
