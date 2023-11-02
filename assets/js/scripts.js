@@ -73,14 +73,21 @@
     } 
 
 
-    $(document).ready(function() {
-        // Assuming backOneLevelBtns is a collection of DOM elements
-        // with a class "backOneLevelBtn"
-        $(".back-one-level").on("click", function() {
-            $(this).closest(".list-wrapper").prev(".list-wrapper").addClass("is-visible");
-            $(this).closest(".list-wrapper").removeClass("is-visible");
-        });
-      });
+      $(document).on('click', '.back-one-level', function() {
+        var $this = $(".list-wrapper.is-visible");
+        if ($this.hasClass('first-item')) {
+            
+            $(".mobile-nav").removeClass("is-visible");
+            $(".menu-wrapper").removeClass("is-visible");
+            $(".list-wrapper").removeClass("is-visible");
+        }else{
+            $this.prev(".list-wrapper").addClass("is-visible");
+            $this.removeClass("is-visible");
+
+        }
+    });
+
+
 
 
 
@@ -128,18 +135,7 @@ const backOneLevelBtns = pageHeader.querySelectorAll(".back-one-level");
 const isVisibleClass = "is-visible";
 const isActiveClass = "is-active";
 
-/*
-toggleMenu.addEventListener("click", function () {
-menuWrapper.classList.toggle(isVisibleClass);
-if (!this.classList.contains(isVisibleClass)) {
-    listWrapper2.classList.remove(isVisibleClass);
-    listWrapper3.classList.remove(isVisibleClass);
-    const menuLinks = menuWrapper.querySelectorAll("a");
-    for (const menuLink of menuLinks) {
-    menuLink.classList.remove(isActiveClass);
-    }
-}
-});*/
+
 
 for (const level1Link of level1Links) {
 level1Link.addEventListener("click", function (e) {
@@ -168,6 +164,7 @@ if (target.tagName.toLowerCase() === "a" && target.nextElementSibling) {
     subMenuWrapper3.append(cloneSiblingList);
     listWrapper3.classList.add(isVisibleClass);
     listWrapper2.classList.remove(isVisibleClass);
+    listWrapper2.classList.remove(isVisibleClass);
 }
 });
 
@@ -185,15 +182,3 @@ if (target.tagName.toLowerCase() === "a" && target.nextElementSibling) {
 }
 });
 
-/*
-for (const backOneLevelBtn of backOneLevelBtns) {
-backOneLevelBtn.addEventListener("click", function () {
-    const parent = this.closest(".list-wrapper");
-    parent.classList.remove(isVisibleClass);
-    parent.previousElementSibling
-    .querySelector(".is-active")
-    .classList.remove(isActiveClass);
-});
-}
-
-*/

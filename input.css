@@ -222,9 +222,6 @@
     @apply text-white text-base font-normal py-3 px-6 whitespace-nowrap block w-full;
   }
 
-  .back-one-level {
-    @apply text-white text-base;
-  }
   .menu-wrapper a.nested{
     @apply text-2xl font-semibold text-white leading-none relative
   }

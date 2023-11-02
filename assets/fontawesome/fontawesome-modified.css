@@ -196,6 +196,8 @@ font-weight: 400; }
 .fa-star::before {
     content: "\f005";
 }
+.fa-arrow-turn-down-left::before {
+    content: "\e2e1"; }
 
 .fab,
 .fa-brands {
@@ -212,3 +214,14 @@ content: "\f167"; }
 
 .fa-pinterest:before {
   content: "\f0d2"; }
+
+
+
+  .fa-flip-vertical {
+    -webkit-transform: scale(1, -1);
+            transform: scale(1, -1); }
+  
+  .fa-flip-both,
+  .fa-flip-horizontal.fa-flip-vertical {
+    -webkit-transform: scale(-1, -1);
+            transform: scale(-1, -1); }
