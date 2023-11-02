@@ -1106,72 +1106,11 @@ body.cart-active .shopping-cart {
   left: 0px;
 }
 
-/******  New CSS *******/
-
 .banner-slider-wrapper {
   background-image: url("/assets/images/black-wood.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-/******** New Menu Css *********/
-
-.mobile-menu ul li {
-  color: #333;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: #852470;
-}
-
-.mobile-menu  ul li a:hover {
-  background-color: #600f4e;
-}
-
-.mobile-menu  li span {
-  font-size: 1.5em;
-  line-height: 0.25em;
-}
-
-.mobile-menu  .hide {
-  margin-left: -300px;
-  transition: all 0.8s ease;
-}
-
-.mobile-menu  .side-menu {
-  position: absolute;
-  top: 0px;
-  background: #eeeeee;
-  color: white;
-  width: 299px;
-  height: 350px;
-  background: transparent;
-  background-color: #982a80;
-}
-
-.mobile-menu .side-menu ul {
-  border-top: 1px solid #600f4e;
-}
-
-.mobile-menu  .side-menu ul li a {
-  background-color: #982a80;
-}
-
-.mobile-menu  .side-menu:last-child ul li a {
-  background-color: #a93c91;
-}
-
-.mobile-menu  .show-menu {
-  margin-left: 0 !important;
-}
-
-@media (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
-
-/******** New Menu Css *********/
 
 .sr-only {
   position: absolute;
@@ -2626,11 +2565,6 @@ body.cart-active .shopping-cart {
   border-color: rgb(96 96 96 / var(--tw-border-opacity));
 }
 
-.border-\[\#a99c67\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(169 156 103 / var(--tw-border-opacity));
-}
-
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(167 154 102 / var(--tw-border-opacity));
@@ -3250,11 +3184,6 @@ body.cart-active .shopping-cart {
   color: rgb(155 155 155 / var(--tw-text-opacity));
 }
 
-.text-\[\#9d9d9d\] {
-  --tw-text-opacity: 1;
-  color: rgb(157 157 157 / var(--tw-text-opacity));
-}
-
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -3608,6 +3537,86 @@ body.cart-active .shopping-cart {
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\] {
   --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
+}
+
+.page-header .menu-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right:0;
+  height: 100vh;
+  overflow: hidden;
+  background: red;
+  z-index: 11;
+  transform: translateX(-100%);
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.page-header .menu-wrapper.is-visible {
+  transform: none;
+}
+
+.page-header .list-wrapper {
+  height: 100%;
+  overflow-y: auto;
+  background: #000;
+}
+
+.page-header .list-wrapper:nth-child(2),
+.page-header .list-wrapper:nth-child(3),
+.page-header .list-wrapper:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.page-header .list-wrapper:nth-child(2).is-visible,
+.page-header .list-wrapper:nth-child(3).is-visible,
+.page-header .list-wrapper:nth-child(4).is-visible {
+  transform: none;
+}
+
+.page-header .list-wrapper:nth-child(1) > ul > li > .sub-menu,
+.page-header .list-wrapper:nth-child(2) .level-3,
+.page-header .list-wrapper:nth-child(3) .level-4 {
+  display: none;
+}
+
+.page-header .menu-wrapper a {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  border-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  --tw-border-opacity: 1;
+  border-color: rgb(65 65 65 / var(--tw-border-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.page-header .menu-wrapper a:hover,
+.page-header .menu-wrapper a.is-active {
+}
+
+.page-header .back-one-level {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -4167,3 +4176,4 @@ body.cart-active .shopping-cart {
     font-size: 27px;
   }
 }
+

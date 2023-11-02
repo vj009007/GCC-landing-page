@@ -58,9 +58,156 @@
          <!-- Logo and user options -->
          <div class="bg-secondary pt-8 pb-8 md:pb-0">
             <div class="container flex justify-between items-center">
-                <div class="humburger flex flex-col gap-[10px] md:hidden">
+                <div class="page-header">
+                <button class="humburger toggle-menu flex flex-col gap-[10px] md:hidden">
                     <i class="fa-regular fa-bars text-white text-3xl"></i>
+                </button>
+                  <nav class="block md:hidden">
+                    <div class="menu-wrapper">
+                      <div class="list-wrapper">
+                        <ul class="level-1">
+                          <li>
+                            <a href="" class="nested">Categories </a>
+                            <ul class="sub-menu level-2">
+                              <li>
+                                <a href="" class="nested">Living Room </a>
+                                <ul class="sub-menu level-3">
+                                  <li>
+                                    <a href="">Oracle 1</a>
+                                    <ul class="sub-menu level-4">
+                                    <li>
+                                      <a href="">Oracle 2</a>
+                                    </li>
+                                    <li>
+                                      <a href="">Host 00</a>
+                                    </li>
+                                    <li>
+                                      <a href="">Tiny 12</a>
+                                    </li>
+                                    <li>
+                                      <a href="">Bright 39</a>
+                                    </li>
+                                    <li>
+                                      <a href="">Exclusion 229</a>
+                                    </li>
+                                  </ul>                                  
+                                </li>
+                                  <li>
+                                    <a href="">Host 00</a>
+                                  </li>
+                                  <li>
+                                    <a href="">Tiny 12</a>
+                                  </li>
+                                  <li>
+                                    <a href="">Bright 39</a>
+                                  </li>
+                                  <li>
+                                    <a href="">Exclusion 229</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="">Dining Room</a>
+                              </li>
+                              <li>
+                                <a href="">Bedroom</a>
+                              </li>
+                              <li>
+                                <a href="">Lighting</a>
+                              </li>
+                              <li>
+                                <a href="">Outdoor</a>
+                              </li>
+                              <li>
+                                <a href="">Office</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="" class="nested">Featured Products</a>
+                            <ul class="sub-menu level-2">
+                              <li>
+                                <a href="">Sofa 1</a>
+                              </li>
+                              <li>
+                                <a href="">Chair 11</a>
+                              </li>
+                              <li>
+                                <a href="">Train 21</a>
+                              </li>
+                              <li>
+                                <a href="">Clumb 52</a>
+                              </li>
+                              <li>
+                                <a href="">Geo 29</a>
+                              </li>
+                              <li>
+                                <a href="">Star</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="" class="nested">Company</a>
+                            <ul class="sub-menu level-2">
+                              <li>
+                                <a href="">History</a>
+                              </li>
+                              <li>
+                                <a href="">Team</a>
+                              </li>
+                              <li>
+                                <a href="" class="nested">Careers</a>
+                                <ul class="sub-menu level-3">
+                                  <li>
+                                    <a href="">Sales Assistant</a>
+                                  </li>
+                                  <li>
+                                    <a href="">Graphic Designer</a>
+                                  </li>
+                                  <li>
+                                    <a href="">Marketing Specialist</a>
+                                  </li>
+                                  <li>
+                                    <a href="">Storekeeper</a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="">Clients</a>
+                          </li>
+                          <li>
+                            <a href="">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="list-wrapper">
+                        <button type="button" class="back-one-level">
+                          <span>Back</span>
+                        </button>
+                        <div class="sub-menu-wrapper"></div>
+                      </div>
+
+                      <div class="list-wrapper">
+                        <button type="button" class="back-one-level">
+                          <span>Back</span>
+                        </button>
+                        <div class="sub-menu-wrapper"></div>
+                      </div>
+
+                      <div class="list-wrapper">
+                        <button type="button" class="back-one-level">
+                          <span>Back</span>
+                        </button>
+                        <div class="sub-menu-wrapper"></div>
+                      </div>
+                    </div>
+                  </nav>
                 </div>
+
+
                 
                <div class="w-36 lg:w-auto md:block hidden">
                   <img width="179" height="136" src="/assets/images/logo.webp" srcset="/assets/images/logo_2x.webp 2x" alt="">
@@ -176,46 +323,13 @@
          </div>
 
 
-         <div class="mobile-menu bg-[#0f0f0f] py-10">
-            <div class="container px-4 mx-auto">
-                <div class="flex items-center justify-between gap-6">
-                    <div class="relative border-2 border-solid border-[#a99c67] w-full">
-                        <input type="text" class="px-4 text-[#9d9d9d] py-3 bg-[#0f0f0f] outline-none block" placeholder="Produktsuche">
-                        <button class="absolute right-3 lg:right-0 top-3 text-[#999999] text-xl px-2" type="submit" name="submit" aria-label="submit button"><i class="fa-regular fa-magnifying-glass"></i><span class="sr-only">Search</span></button>
-                    </div>
-                    <i class="fa-solid fa-xmark text-2xl text-white px-4"></i>
-                </div>
 
-                <div class="nav-title">
-                    <!-- <a href="#" class="nav-link" id="layer1">← back</a> -->
-                    <ul>
-                       <li><a href="#" class="l1" value="2" >About Us<span> ›</span></a></li>
-                       <li><a href="#" class="l1" value="2" >How It Works</a></li>
-                       <li><a href="#" class="l1" value="2">Start a Site</a></li>
-                       <li><a href="#" class="l1" value="2" >Resources</a></li>
-                       <li><a href="#" class="l1" value="2" >Search</a></li>
-                    </ul>
-                 </div>
-                 <div class="layer1 side-menu hide" id="layer2" style="height: 100%;" >
-                    <ul data-value="2">
-                       <li><a href="#" class="nav-link l1" value="3" id="l2" style="background-color: #852470; ">← back</a></li>
-                       <li><a href="#" class="l1" value="3">About Us</a></li>
-                       <li><a href="#" class="l1" value="3" id="l2">Get Involved<span> ›</span></a></li>
-                       <li><a href="#" class="l1" value="3">History</a></li>
-                       <li><a href="#" class="l1" value="3">Financials & Ratings</a></li>
-                       <li><a href="#" class="l1" value="3" >Our People</a></li>
-                       <li><a href="#" class="l1" value="3" >Careers</a></li>
-                    </ul>
-                 </div>
-                 <div class="layer2 side-menu hide" id="layer3" style="margin-top: 52px; height: calc(100% - 52px); background-color: #a93c91;">
-                    <ul>
-                       <li><a href="#" class="">Donate</a></li>
-                       <li><a href="#" class="">Partnerships</a></li>
-                       <li><a href="#" class="">Share this Site</a></li>
-                    </ul>
-                 </div>
-            </div>
-         </div>
+         
+
+
+
+
+
       </header>
       <!-- End Header -->
 
@@ -1254,33 +1368,94 @@
             }
         };
 
-        /// Mobile menu 
-        $('.mobile-menu .l1').on('click',function(){
-            var tag = $(this).attr('value');
-            var tag1 = $(this).text();
-            // window.alert("#layer"+tag1);
-            var back_link="#layer"+tag;
-            //window.alert(back_link);
-        $('.mobile-menu .nav-link').attr('href',back_link);
-            //$('.nav-link').text(tag1);
-            $('.nav-link').attr('value',tag);
-            $("#layer"+tag).removeClass('hide-menu'); 
-            $("#layer"+tag).toggleClass('show-menu'); 
-        });
-        $('.mobile-menu .nav-link').on('click',function(){
-            var tag = $(this).attr('href');
-            var val= $(this).attr('value');
-            // window.alert(val);
-            $(tag).removeClass('show-menu'); 
-            var back_link="#layer"+(val-1);
-            $('.nav-link').attr('href',back_link);
-            $('.nav-link').attr('value',val-1);
-            //window.alert(back_link);
-            
-        });
+     
 
 
-        /// Mobile menu 
+const pageHeader = document.querySelector(".page-header");
+const toggleMenu = pageHeader.querySelector(".toggle-menu");
+const menuWrapper = pageHeader.querySelector(".menu-wrapper");
+const level1Links = pageHeader.querySelectorAll(".level-1 > li > a");
+const listWrapper2 = pageHeader.querySelector(".list-wrapper:nth-child(2)");
+const listWrapper3 = pageHeader.querySelector(".list-wrapper:nth-child(3)");
+const listWrapper4 = pageHeader.querySelector(".list-wrapper:nth-child(4)");
+const subMenuWrapper2 = listWrapper2.querySelector(".sub-menu-wrapper");
+const subMenuWrapper3 = listWrapper3.querySelector(".sub-menu-wrapper");
+const subMenuWrapper4 = listWrapper4.querySelector(".sub-menu-wrapper");
+const backOneLevelBtns = pageHeader.querySelectorAll(".back-one-level");
+const isVisibleClass = "is-visible";
+const isActiveClass = "is-active";
+
+toggleMenu.addEventListener("click", function () {
+  menuWrapper.classList.toggle(isVisibleClass);
+  if (!this.classList.contains(isVisibleClass)) {
+    listWrapper2.classList.remove(isVisibleClass);
+    listWrapper3.classList.remove(isVisibleClass);
+    const menuLinks = menuWrapper.querySelectorAll("a");
+    for (const menuLink of menuLinks) {
+      menuLink.classList.remove(isActiveClass);
+    }
+  }
+});
+
+for (const level1Link of level1Links) {
+  level1Link.addEventListener("click", function (e) {
+    const siblingList = level1Link.nextElementSibling;
+    if (siblingList) {
+      e.preventDefault();
+      this.classList.add(isActiveClass);
+      const cloneSiblingList = siblingList.cloneNode(true);
+      subMenuWrapper2.innerHTML = "";
+      subMenuWrapper2.append(cloneSiblingList);
+      listWrapper2.classList.add(isVisibleClass);
+    }
+  });
+}
+
+listWrapper2.addEventListener("click", function (e) {
+  const target = e.target;
+  if (target.tagName.toLowerCase() === "a" && target.nextElementSibling) {
+    const siblingList = target.nextElementSibling;
+    e.preventDefault();
+    target.classList.add(isActiveClass);
+    const cloneSiblingList = siblingList.cloneNode(true);
+    subMenuWrapper3.innerHTML = "";
+    subMenuWrapper3.append(cloneSiblingList);
+    listWrapper3.classList.add(isVisibleClass);
+  }
+});
+
+listWrapper3.addEventListener("click", function (e) {
+  const target = e.target;
+  if (target.tagName.toLowerCase() === "a" && target.nextElementSibling) {
+    const siblingList = target.nextElementSibling;
+    e.preventDefault();
+    target.classList.add(isActiveClass);
+    const cloneSiblingList = siblingList.cloneNode(true);
+    subMenuWrapper4.innerHTML = "";
+    subMenuWrapper4.append(cloneSiblingList);
+    listWrapper4.classList.add(isVisibleClass);
+  }
+});
+
+for (const backOneLevelBtn of backOneLevelBtns) {
+  backOneLevelBtn.addEventListener("click", function () {
+    const parent = this.closest(".list-wrapper");
+    parent.classList.remove(isVisibleClass);
+    parent.previousElementSibling
+      .querySelector(".is-active")
+      .classList.remove(isActiveClass);
+  });
+}
+
+
+
+
+
+
+
+
+
+
       </script>
 
 

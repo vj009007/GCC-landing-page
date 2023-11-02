@@ -172,55 +172,75 @@
     @apply left-0;
   }
 
-  /******  New CSS *******/
   .banner-slider-wrapper {
     background-image: url("/assets/images/black-wood.webp");
     @apply bg-no-repeat bg-cover;
   }
-  /******** New Menu Css *********/
-  .mobile-menu ul li {
-    color: #333;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background: #852470;
-  }
-  .mobile-menu  ul li a:hover {
-    background-color: #600f4e;
-  }
-  .mobile-menu  li span {
-    font-size: 1.5em;
-    line-height: 0.25em;
-  }
-  .mobile-menu  .hide {
-    margin-left: -300px;
-    transition: all 0.8s ease;
-  }
 
-  .mobile-menu  .side-menu {
-    position: absolute;
-    top: 0px;
-    background: #eeeeee;
-    color: white;
-    width: 299px;
-    height: 350px;
-    background: transparent;
-    background-color: #982a80;
-  }
-  .mobile-menu .side-menu ul {
-    border-top: 1px solid #600f4e;
-  }
-  .mobile-menu  .side-menu ul li a {
-    background-color: #982a80;
-  }
-  .mobile-menu  .side-menu:last-child ul li a {
-    background-color: #a93c91;
-  }
-  .mobile-menu  .show-menu {
-    margin-left: 0 !important;
-  }
-  .mobile-menu{
-    @apply md:hidden
-  }
-  /******** New Menu Css *********/
 }
+
+
+
+.page-header .menu-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right:0;
+  height: 100vh;
+  overflow: hidden;
+  background: red;
+  z-index: 11;
+  transform: translateX(-100%);
+  backface-visibility: hidden;
+  transition: transform 0.5s; 
+}
+
+.page-header .menu-wrapper.is-visible {
+  transform: none;
+}
+
+.page-header .list-wrapper {
+  height: 100%;
+  overflow-y: auto;
+  background: #000;
+}
+
+.page-header .list-wrapper:nth-child(2),
+.page-header .list-wrapper:nth-child(3),
+.page-header .list-wrapper:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.page-header .list-wrapper:nth-child(2).is-visible,
+.page-header .list-wrapper:nth-child(3).is-visible,
+.page-header .list-wrapper:nth-child(4).is-visible {
+  transform: none;
+}
+
+.page-header .list-wrapper:nth-child(1) > ul > li > .sub-menu,
+.page-header .list-wrapper:nth-child(2) .level-3,
+.page-header .list-wrapper:nth-child(3) .level-4 {
+  display: none;
+}
+
+.page-header .menu-wrapper a {
+  @apply text-white text-base font-normal py-3 px-6 border border-[#414141] border-t-0 border-x-0 whitespace-nowrap block w-full;
+  
+}
+
+.page-header .menu-wrapper a:hover,
+.page-header .menu-wrapper a.is-active {
+
+}
+
+
+.page-header .back-one-level {
+  @apply text-white text-base;
+}
+
