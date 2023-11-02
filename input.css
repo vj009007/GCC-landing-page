@@ -176,9 +176,6 @@
     @apply bg-[url('/assets/images/black-wood-mobile.webp')] md:bg-[url('/assets/images/black-wood.webp')]  bg-no-repeat bg-cover;
   }
 
-  .banner-slider > .slider-item{
-    @apply hidden !important;
-  }
 
   /* Mobile Product Slider  */
   .mobileSlider ul.slick-dots {
