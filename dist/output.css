@@ -1132,7 +1132,7 @@ body.cart-active .shopping-cart {
 
 /* Mobile Menu */
 
-.menu-wrapper {
+.mobile-nav {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -1151,8 +1151,17 @@ body.cart-active .shopping-cart {
   backface-visibility: hidden;
 }
 
-.menu-wrapper.is-visible {
+.mobile-nav.is-visible {
   transform: none;
+}
+
+.menu-wrapper{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  border: solid 1px blue;
 }
 
 .list-wrapper {
@@ -1165,7 +1174,7 @@ body.cart-active .shopping-cart {
   position: absolute;
   top: 0px;
   left: 0px;
-  right: 2.5rem;
+  right: 0px;
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   transition-property: transform;
