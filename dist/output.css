@@ -1040,7 +1040,7 @@ body {
 
 @media (min-width: 1024px) {
   .sub-menu img {
-    width: auto;
+    width: 43px;
   }
 }
 
@@ -1107,9 +1107,19 @@ body.cart-active .shopping-cart {
 }
 
 .banner-slider-wrapper {
-  background-image: url("/assets/images/black-wood.webp");
+  background-image: url('/assets/images/black-wood-mobile.webp');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .banner-slider-wrapper {
+    background-image: url('/assets/images/black-wood.webp');
+  }
+}
+
+.banner-slider > .slider-item {
+  display: none !important;
 }
 
 /* Mobile Product Slider  */
@@ -1159,6 +1169,7 @@ body.cart-active .shopping-cart {
 
 .menu-wrapper {
   position: relative;
+  min-height: 60vh;
 }
 
 .list-wrapper {
@@ -1592,6 +1603,15 @@ body.cart-active .shopping-cart {
 
 .max-h-\[70px\] {
   max-height: 70px;
+}
+
+.min-h-\[175px\] {
+  min-height: 175px;
+}
+
+.min-h-min {
+  min-height: -moz-min-content;
+  min-height: min-content;
 }
 
 .w-10 {
@@ -2881,6 +2901,11 @@ body.cart-active .shopping-cart {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-6 {
